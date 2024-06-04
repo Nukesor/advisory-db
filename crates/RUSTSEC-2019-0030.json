@@ -1,15 +1,18 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2019-0030",
-  "modified": "2021-01-04T17:02:59Z",
+  "modified": "2023-11-02T13:03:48Z",
   "published": "2019-10-06T12:00:00Z",
   "aliases": [
-    "CVE-2020-25575",
     "CVE-2019-25006",
-    "CVE-2019-25007"
+    "CVE-2019-25007",
+    "GHSA-39wr-f4ff-xm6p",
+    "GHSA-gf93-h79q-6jjv"
   ],
   "related": [],
   "summary": "Incorrect implementation of the Streebog hash functions",
   "details": "Internal `update-sigma` function was implemented incorrectly and depending on\n`debug-assertions` it could've caused an incorrect result or panic for certain\ninputs.",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -22,7 +25,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [
@@ -43,7 +47,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -59,5 +64,8 @@
       "type": "WEB",
       "url": "https://github.com/RustCrypto/hashes/pull/91"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

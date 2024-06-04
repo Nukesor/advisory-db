@@ -1,4 +1,5 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2021-0064",
   "modified": "2021-05-06T23:45:32Z",
   "published": "2021-05-06T12:00:00Z",
@@ -6,6 +7,7 @@
   "related": [],
   "summary": "`cpuid-bool` has been renamed to `cpufeatures`",
   "details": "Please use the `cpufeatures`` crate going forward:\n\n<https://github.com/RustCrypto/utils/tree/master/cpufeatures>\n\nThere will be no further releases of `cpuid-bool`.",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -18,7 +20,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -34,7 +37,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -50,5 +54,8 @@
       "type": "WEB",
       "url": "https://github.com/RustCrypto/utils/pull/381"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

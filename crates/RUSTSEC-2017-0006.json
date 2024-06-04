@@ -1,11 +1,15 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2017-0006",
-  "modified": "2020-10-02T01:29:11Z",
+  "modified": "2023-06-13T13:10:24Z",
   "published": "2017-11-21T12:00:00Z",
-  "aliases": [],
+  "aliases": [
+    "GHSA-mcrf-7hf9-f6q5"
+  ],
   "related": [],
   "summary": "Unchecked vector pre-allocation",
   "details": "Affected versions of this crate pre-allocate memory on deserializing raw\nbuffers without checking whether there is sufficient data available.\n\nThis allows an attacker to do denial-of-service attacks by sending small\nmsgpack messages that allocate gigabytes of memory.",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -18,7 +22,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [
@@ -39,7 +44,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -55,5 +61,8 @@
       "type": "REPORT",
       "url": "https://github.com/3Hren/msgpack-rust/issues/151"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

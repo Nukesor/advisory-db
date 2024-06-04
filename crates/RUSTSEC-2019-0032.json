@@ -1,4 +1,5 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2019-0032",
   "modified": "2020-10-02T01:29:11Z",
   "published": "2019-11-21T12:00:00Z",
@@ -6,6 +7,7 @@
   "related": [],
   "summary": "crust repo has been archived; use libp2p instead",
   "details": "** The `crust` crate repo was archived with no warning or explanation.**\n\nGiven that it was archived with no warning or successor, there's not an\nofficial replacement but [`rust-libp2p`](https://github.com/libp2p/rust-libp2p)\nlooks like it's got a similar feature set and is actively maintained.",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -18,7 +20,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -37,7 +40,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -53,5 +57,8 @@
       "type": "WEB",
       "url": "https://github.com/maidsafe/crust"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

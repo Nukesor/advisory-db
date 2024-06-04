@@ -1,4 +1,5 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2020-0058",
   "modified": "2020-10-25T19:14:03Z",
   "published": "2020-10-15T12:00:00Z",
@@ -6,6 +7,7 @@
   "related": [],
   "summary": "crate has been renamed to `cipher`",
   "details": "This crate has been renamed from `stream-cipher` to `cipher`.\n\nThe new repository location is at:\n\n<https://github.com/RustCrypto/traits/tree/master/cipher>",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -18,7 +20,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -34,7 +37,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -50,5 +54,8 @@
       "type": "WEB",
       "url": "https://github.com/RustCrypto/traits/pull/337"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

@@ -1,13 +1,21 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2018-0012",
-  "modified": "2021-10-19T22:14:35Z",
+  "modified": "2023-06-13T13:10:24Z",
   "published": "2018-12-20T12:00:00Z",
   "aliases": [
-    "CVE-2018-20999"
+    "CVE-2018-20999",
+    "GHSA-gffv-5hr2-f9gj"
   ],
   "related": [],
   "summary": "Flaw in streaming state reset() functions can create incorrect results.",
   "details": "Affected versions of this crate did not properly reset a streaming state.\n\nResetting a streaming state, without finalising it first, creates incorrect results.\n \nThe flaw was corrected by not first checking if the state had already been reset, when calling reset().",
+  "severity": [
+    {
+      "type": "CVSS_V3",
+      "score": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
   "affected": [
     {
       "package": {
@@ -20,7 +28,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -39,7 +48,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -55,5 +65,8 @@
       "type": "REPORT",
       "url": "https://github.com/brycx/orion/issues/46"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

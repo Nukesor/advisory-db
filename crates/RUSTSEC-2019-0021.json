@@ -1,13 +1,21 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2019-0021",
-  "modified": "2021-10-19T22:14:35Z",
+  "modified": "2023-06-13T13:10:24Z",
   "published": "2019-09-14T12:00:00Z",
   "aliases": [
-    "CVE-2019-16880"
+    "CVE-2019-16880",
+    "GHSA-j52m-489x-v634"
   ],
   "related": [],
   "summary": "`Matrix::zip_elements` causes double free",
   "details": "Affected versions of this crate did not properly implements the `Matrix::zip_elements` method, which causes an double free when the given trait implementation might panic.\n\nThis allows an attacker to corrupt or take control of the memory.\n \nThe flaw was corrected by Phosphorus15.",
+  "severity": [
+    {
+      "type": "CVSS_V3",
+      "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
   "affected": [
     {
       "package": {
@@ -20,7 +28,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [
@@ -41,7 +50,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -57,5 +67,8 @@
       "type": "REPORT",
       "url": "https://github.com/strake/linea.rs/issues/2"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

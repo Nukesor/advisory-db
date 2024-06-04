@@ -1,4 +1,5 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2020-0095",
   "modified": "2021-01-24T19:50:18Z",
   "published": "2020-12-20T12:00:00Z",
@@ -6,6 +7,7 @@
   "related": [],
   "summary": "difference is unmaintained",
   "details": "The author of the `difference` crate is unresponsive.\n\nMaintained alternatives:\n\n- [`dissimilar`](https://crates.io/crates/dissimilar)\n\n- [`similar`](https://crates.io/crates/similar)\n\n- [`treediff`](https://crates.io/crates/treediff)\n\n- [`diffus`](https://crates.io/crates/diffus)",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -18,7 +20,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -37,7 +40,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -53,5 +57,8 @@
       "type": "REPORT",
       "url": "https://github.com/johannhof/difference.rs/issues/45"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

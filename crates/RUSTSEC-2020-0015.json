@@ -1,13 +1,21 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2020-0015",
-  "modified": "2021-10-19T22:14:35Z",
+  "modified": "2023-06-13T13:10:24Z",
   "published": "2020-04-25T12:00:00Z",
   "aliases": [
-    "CVE-2020-1967"
+    "CVE-2020-1967",
+    "GHSA-jq65-29v4-4x35"
   ],
   "related": [],
   "summary": "Crash causing Denial of Service attack",
   "details": "Server or client applications that call the SSL_check_chain() function during or after a TLS 1.3 \nhandshake may crash due to a NULL pointer dereference as a result of incorrect handling of the \n\"signature_algorithms_cert\" TLS extension. The crash occurs if an invalid or unrecognised signature \nalgorithm is received from the peer. This could be exploited by a malicious peer in a Denial of \nService attack.",
+  "severity": [
+    {
+      "type": "CVSS_V3",
+      "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
   "affected": [
     {
       "package": {
@@ -20,7 +28,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [
@@ -41,7 +50,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -57,5 +67,8 @@
       "type": "WEB",
       "url": "https://www.openssl.org/news/secadv/20200421.txt"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

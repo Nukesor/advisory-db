@@ -1,15 +1,18 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2020-0052",
-  "modified": "2021-01-04T17:02:59Z",
+  "modified": "2023-06-13T13:10:24Z",
   "published": "2020-06-26T12:00:00Z",
   "aliases": [
-    "CVE-2020-35904",
     "CVE-2020-15254",
+    "CVE-2020-35904",
+    "GHSA-m8h8-v6jh-c762",
     "GHSA-v5m7-53cv-f3hx"
   ],
   "related": [],
   "summary": "Undefined Behavior in bounded channel",
   "details": "The affected version of this crate's the `bounded` channel incorrectly assumes that `Vec::from_iter` has allocated capacity that same as the number of iterator elements. `Vec::from_iter` does not actually guarantee that and may allocate extra memory. The destructor of the `bounded` channel reconstructs `Vec` from the raw pointer based on the incorrect assumes described above. This is unsound and causing deallocation with the incorrect capacity when `Vec::from_iter` has allocated different sizes with the number of iterator elements.",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -22,7 +25,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [
@@ -43,7 +47,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -59,5 +64,8 @@
       "type": "WEB",
       "url": "https://github.com/crossbeam-rs/crossbeam/pull/533"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

@@ -1,11 +1,17 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2021-0114",
-  "modified": "2021-09-23T20:26:20Z",
+  "modified": "2023-06-13T13:10:24Z",
   "published": "2021-09-23T12:00:00Z",
-  "aliases": [],
+  "aliases": [
+    "CVE-2021-45705",
+    "GHSA-p6gj-gpc8-f8xw",
+    "GHSA-r57r-j98g-587f"
+  ],
   "related": [],
   "summary": "Aliased mutable references from `tls_rand` & `TlsWyRand`",
   "details": "`TlsWyRand`'s implementation of `Deref` unconditionally dereferences a raw pointer, and returns \nmultiple mutable references to the same object, which is undefined behavior.",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -20,7 +26,8 @@
           "functions": [
             "nanorand::tls::tls_rand"
           ]
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -39,7 +46,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -55,5 +63,8 @@
       "type": "REPORT",
       "url": "https://github.com/Absolucy/nanorand-rs/issues/28"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

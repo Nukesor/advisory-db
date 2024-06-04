@@ -1,4 +1,5 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2022-0005",
   "modified": "2022-01-22T18:27:42Z",
   "published": "2022-01-22T12:00:00Z",
@@ -6,6 +7,7 @@
   "related": [],
   "summary": "crate has been renamed to `ftdi-embedded-hal`",
   "details": "This crate has been renamed from `ftd2xx-embedded-hal` to `ftdi-embedded-hal`.\n\nThe new repository location is:\n\n<https://github.com/ftdi-rs/ftdi-embedded-hal>",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -18,7 +20,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -34,7 +37,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -50,5 +54,8 @@
       "type": "WEB",
       "url": "https://github.com/newAM/ftd2xx-embedded-hal/pull/40"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

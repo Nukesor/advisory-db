@@ -1,13 +1,21 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2020-0032",
-  "modified": "2021-10-19T22:14:35Z",
+  "modified": "2023-06-13T13:10:24Z",
   "published": "2020-08-20T12:00:00Z",
   "aliases": [
-    "CVE-2020-35885"
+    "CVE-2020-35885",
+    "GHSA-qc4m-gc8r-mg8m"
   ],
   "related": [],
   "summary": "StrcCtx deallocates a memory region that it doesn't own",
   "details": "`StrcCtx` deallocate a memory region that it doesn't own when `StrcCtx` is created without using `StrcCtx::new`.\nThis can introduce memory safety issues such as double-free and use-after-free to client programs.",
+  "severity": [
+    {
+      "type": "CVSS_V3",
+      "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
   "affected": [
     {
       "package": {
@@ -20,7 +28,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -36,7 +45,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -52,5 +62,8 @@
       "type": "REPORT",
       "url": "https://github.com/pigeonhands/rust-arch/issues/2"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

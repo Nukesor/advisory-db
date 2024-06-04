@@ -1,4 +1,5 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2021-0069",
   "modified": "2021-10-19T19:56:47Z",
   "published": "2021-05-22T12:00:00Z",
@@ -9,6 +10,7 @@
   "related": [],
   "summary": "SMTP command injection in body",
   "details": "Affected versions of lettre allowed SMTP command injection through an attacker's controlled message body. The module for escaping lines starting with a period wouldn't catch a period that was placed after a double CRLF sequence, allowing the attacker to end the current message and write arbitrary SMTP commands after it.\n\nThe flaw is fixed by correctly handling consecutive CRLF sequences.",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -25,7 +27,8 @@
             "lettre::transport::smtp::SmtpTransport::send",
             "lettre::transport::smtp::SmtpTransport::send_raw"
           ]
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [
@@ -52,7 +55,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -68,5 +72,8 @@
       "type": "WEB",
       "url": "https://github.com/lettre/lettre/pull/627/commits/93458d01fed0ec81c0e7b4e98e6f35961356fae2"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

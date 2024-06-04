@@ -1,4 +1,5 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2021-0002",
   "modified": "2021-01-06T16:07:19Z",
   "published": "2021-01-04T12:00:00Z",
@@ -6,6 +7,7 @@
   "related": [],
   "summary": "interfaces2 is unmaintained, use interfaces instead",
   "details": "The `interfaces2` crate is not maintained any more;\nuse [`interfaces`](https://crates.io/crates/interfaces) instead.",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -18,7 +20,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -34,7 +37,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -50,5 +54,8 @@
       "type": "WEB",
       "url": "https://github.com/aep/interfaces-rs"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

@@ -1,11 +1,17 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2021-0088",
-  "modified": "2021-08-22T01:34:42Z",
+  "modified": "2023-06-13T13:10:24Z",
   "published": "2021-01-05T12:00:00Z",
-  "aliases": [],
+  "aliases": [
+    "CVE-2021-45686",
+    "GHSA-9783-42pm-x5jq",
+    "GHSA-r67p-m7g9-gxw6"
+  ],
   "related": [],
   "summary": "`Read` on uninitialized memory may cause UB (fn preamble_skipcount())",
   "details": "Affected versions of this crate passes an uninitialized buffer to a user-provided `Read` implementation (within `fn preamble_skipcount()`).\n\nArbitrary `Read` implementations can read from the uninitialized buffer (memory exposure) and also can return incorrect number of bytes written to the buffer.\nReading from uninitialized memory produces undefined values that can quickly invoke undefined behavior.",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -18,7 +24,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [
@@ -33,10 +40,14 @@
           "events": [
             {
               "introduced": "0.0.0-0"
+            },
+            {
+              "fixed": "0.2.0"
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -51,6 +62,13 @@
     {
       "type": "REPORT",
       "url": "https://github.com/jblondin/csv-sniffer/issues/1"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/jblondin/csv-sniffer/pull/2"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

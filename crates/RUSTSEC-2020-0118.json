@@ -1,13 +1,22 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2020-0118",
-  "modified": "2021-10-19T22:14:35Z",
+  "modified": "2023-06-13T13:10:24Z",
   "published": "2020-12-08T12:00:00Z",
   "aliases": [
-    "CVE-2020-36438"
+    "CVE-2020-36438",
+    "GHSA-fg42-vwxx-xx5j",
+    "GHSA-m296-j53x-xv95"
   ],
   "related": [],
   "summary": "Future<T> lacks bounds on Send and Sync.",
   "details": "`tiny_future` contains a light-weight implementation of `Future`s. The `Future`\ntype it has lacked bound on its `Send` and `Sync` traits.\n\nThis allows for a bug where non-thread safe types such as `Cell` can be used in\n`Future`s and cause data races in concurrent programs.\n\nThe flaw was corrected in commit `c791919` by adding trait bounds to `Future`'s\n`Send` and `Sync`.",
+  "severity": [
+    {
+      "type": "CVSS_V3",
+      "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
   "affected": [
     {
       "package": {
@@ -20,7 +29,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [
@@ -42,7 +52,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -58,5 +69,8 @@
       "type": "REPORT",
       "url": "https://github.com/KizzyCode/tiny_future/issues/1"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

@@ -1,13 +1,21 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2020-0009",
-  "modified": "2021-10-19T22:14:35Z",
+  "modified": "2023-06-13T13:10:24Z",
   "published": "2020-04-11T12:00:00Z",
   "aliases": [
-    "CVE-2020-35864"
+    "CVE-2020-35864",
+    "GHSA-c9h5-hf8r-m97x"
   ],
   "related": [],
   "summary": "`read_scalar` and `read_scalar_at` allow transmuting values without `unsafe` blocks",
   "details": "The `read_scalar` and `read_scalar_at` functions are unsound\nbecause they allow transmuting values without `unsafe` blocks.\n\nThe following example shows how to create a dangling reference:\n\n```\nfn main() {\n    #[derive(Copy, Clone, PartialEq, Debug)]\n    struct S(&'static str);\n    impl flatbuffers::EndianScalar for S {\n        fn to_little_endian(self) -> Self { self }\n        fn from_little_endian(self) -> Self { self }\n    }\n    println!(\"{:?}\", flatbuffers::read_scalar::<S>(&[1; std::mem::size_of::<S>()]));\n}\n```",
+  "severity": [
+    {
+      "type": "CVSS_V3",
+      "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
   "affected": [
     {
       "package": {
@@ -23,7 +31,8 @@
             "flatbuffers::read_scalar",
             "flatbuffers::read_scalar_at"
           ]
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -42,7 +51,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -58,5 +68,8 @@
       "type": "REPORT",
       "url": "https://github.com/google/flatbuffers/issues/5825"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

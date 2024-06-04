@@ -1,11 +1,17 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2021-0121",
-  "modified": "2021-10-18T16:22:07Z",
+  "modified": "2023-06-13T13:10:24Z",
   "published": "2021-10-08T12:00:00Z",
-  "aliases": [],
+  "aliases": [
+    "CVE-2021-45709",
+    "GHSA-9hfg-pxr6-q4vp",
+    "GHSA-pmcv-mgcf-rvxg"
+  ],
   "related": [],
   "summary": "Non-aligned u32 read in Chacha20 encryption and decryption",
   "details": "The implementation does not enforce alignment requirements on input slices while incorrectly assuming 4-byte alignment through an unsafe call to `std::slice::from_raw_parts_mut`, which breaks the contract and introduces undefined behavior.\n\nThis affects Chacha20 encryption and decryption in crypto2.",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -22,7 +28,8 @@
             "crypto2::streamcipher::Chacha20::encrypt_slice",
             "crypto2::streamcipher::xor_si512_inplace"
           ]
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -38,7 +45,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -54,5 +62,8 @@
       "type": "REPORT",
       "url": "https://github.com/shadowsocks/crypto2/issues/27"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

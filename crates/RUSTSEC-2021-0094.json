@@ -1,11 +1,17 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2021-0094",
-  "modified": "2021-08-22T01:46:40Z",
+  "modified": "2023-06-13T13:10:24Z",
   "published": "2021-02-03T12:00:00Z",
-  "aliases": [],
+  "aliases": [
+    "CVE-2021-45694",
+    "GHSA-2rxc-8f9w-fjq8",
+    "GHSA-q579-9wp9-gfp2"
+  ],
   "related": [],
   "summary": "Window can read out of bounds if Read instance returns more bytes than buffer size",
   "details": "`rdiff` performs a diff of two provided strings or files. As part of its reading\ncode it uses the return value of a `Read` instance to set the length of\nits internal character vector.\n\nIf the `Read` implementation claims that it has read more bytes than the length\nof the provided buffer, the length of the vector will be set to longer than its\ncapacity. This causes `rdiff` APIs to return uninitialized memory in its API\nmethods.",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -18,7 +24,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [
@@ -36,7 +43,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -52,5 +60,8 @@
       "type": "REPORT",
       "url": "https://github.com/dyule/rdiff/issues/3"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

@@ -1,15 +1,23 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2019-0002",
-  "modified": "2021-10-19T22:14:35Z",
+  "modified": "2023-06-13T13:10:24Z",
   "published": "2019-05-07T12:00:00Z",
   "aliases": [
-    "CVE-2019-15543"
+    "CVE-2019-15543",
+    "GHSA-c3m3-c39q-pv23"
   ],
   "related": [
     "RUSTSEC-2018-0008"
   ],
   "summary": "Bug in SliceDeque::move_head_unchecked corrupts its memory",
   "details": "Affected versions of this crate entered a corrupted state if\n`mem::size_of::<T>() % allocation_granularity() != 0` and a specific allocation\npattern was used: sufficiently shifting the deque elements over the mirrored\npage boundary.\n\nThis allows an attacker that controls controls both element insertion and\nremoval to corrupt the deque, such that reading elements from it would read\nbytes corresponding to other elements in the deque. (e.g. a read of T could read\nsome bytes from one value and some bytes from an adjacent one, resulting in a T\nwhose value representation is not meaningful). This is undefined behavior.\n \nThe flaw was corrected by using a pair of pointers to track the head and tail of\nthe deque instead of a pair of indices. This pair of pointers are represented\nusing a Rust slice.",
+  "severity": [
+    {
+      "type": "CVSS_V3",
+      "score": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
   "affected": [
     {
       "package": {
@@ -22,7 +30,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -41,7 +50,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -57,5 +67,8 @@
       "type": "REPORT",
       "url": "https://github.com/gnzlbg/slice_deque/issues/57"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

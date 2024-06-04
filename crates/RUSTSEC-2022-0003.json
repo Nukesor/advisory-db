@@ -1,11 +1,15 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2022-0003",
-  "modified": "2022-01-19T22:35:01Z",
+  "modified": "2023-06-13T13:10:24Z",
   "published": "2022-01-19T12:00:00Z",
-  "aliases": [],
+  "aliases": [
+    "GHSA-p2g9-94wh-65c2"
+  ],
   "related": [],
   "summary": "Space bug in `clean_text`",
   "details": "An incorrect mapping from HTML specification to ASCII codes was used.\nBecause HTML treats the Form Feed as whitespace, code like this has an injection bug:\n\n    let html = format!(\"<div title={}>\", clean_text(user_supplied_string));\n\nApplications are not affected if they quote their attributes, or if they don't use `clean_text` at all.",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -20,7 +24,8 @@
           "functions": [
             "ammonia::clean_text"
           ]
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [
@@ -41,7 +46,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -57,5 +63,8 @@
       "type": "WEB",
       "url": "https://github.com/rust-ammonia/ammonia/pull/147"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

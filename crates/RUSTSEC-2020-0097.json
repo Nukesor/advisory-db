@@ -1,13 +1,21 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2020-0097",
-  "modified": "2021-10-19T22:14:35Z",
+  "modified": "2023-06-13T13:10:24Z",
   "published": "2020-12-10T12:00:00Z",
   "aliases": [
-    "CVE-2020-36205"
+    "CVE-2020-36205",
+    "GHSA-c8hq-x4mm-p6q6"
   ],
   "related": [],
   "summary": "Soundness issue with base::Error",
   "details": "`base::Error` type contains public field named `ptr`.\nWith this definition, it is possible to create a `base::Error` with an invalid pointer and trigger memory safety errors\nsuch as use-after-free or double-free with safe Rust.\n\nThe users of `xcb` crate are advised not to manipulate the field.",
+  "severity": [
+    {
+      "type": "CVSS_V3",
+      "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
   "affected": [
     {
       "package": {
@@ -20,7 +28,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [
@@ -36,10 +45,14 @@
           "events": [
             {
               "introduced": "0.0.0-0"
+            },
+            {
+              "fixed": "1.0.0"
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -53,7 +66,10 @@
     },
     {
       "type": "REPORT",
-      "url": "https://github.com/rtbo/rust-xcb/issues/93"
+      "url": "https://github.com/rust-x-bindings/rust-xcb/issues/93"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

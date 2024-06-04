@@ -1,14 +1,23 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2020-0105",
-  "modified": "2021-10-19T22:14:35Z",
+  "modified": "2023-06-13T13:10:24Z",
   "published": "2020-12-21T12:00:00Z",
   "aliases": [
     "CVE-2020-36212",
-    "CVE-2020-36213"
+    "CVE-2020-36213",
+    "GHSA-vq23-5h4f-vwpv",
+    "GHSA-wqxc-qrq4-w5v4"
   ],
   "related": [],
   "summary": "Update unsound DrainFilter and RString::retain",
   "details": "Affected versions of this crate contained code from the Rust standard library that contained soundness bugs rust-lang/rust#60977 (double drop) & rust-lang/rust#78498 (create invalid utf-8 string).\n\nThe flaw was corrected in v0.9.1 by making a similar fix to the one made in the Rust standard library.",
+  "severity": [
+    {
+      "type": "CVSS_V3",
+      "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  ],
   "affected": [
     {
       "package": {
@@ -21,7 +30,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [
@@ -42,7 +52,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -58,5 +69,8 @@
       "type": "REPORT",
       "url": "https://github.com/rodrimati1992/abi_stable_crates/issues/44"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

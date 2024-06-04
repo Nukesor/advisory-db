@@ -1,4 +1,5 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2020-0016",
   "modified": "2020-10-02T01:29:11Z",
   "published": "2020-05-01T12:00:00Z",
@@ -6,6 +7,7 @@
   "related": [],
   "summary": "`net2` crate has been deprecated; use `socket2` instead",
   "details": "The [`net2`](https://crates.io/crates/net2) crate has been deprecated\nand users are encouraged to considered [`socket2`](https://crates.io/crates/socket2) instead.",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -18,7 +20,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -34,7 +37,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -50,5 +54,8 @@
       "type": "WEB",
       "url": "https://github.com/deprecrated/net2-rs/commit/3350e3819adf151709047e93f25583a5df681091"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

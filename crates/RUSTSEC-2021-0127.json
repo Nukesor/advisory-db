@@ -1,4 +1,5 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2021-0127",
   "modified": "2021-12-01T14:04:55Z",
   "published": "2021-08-15T12:00:00Z",
@@ -6,6 +7,7 @@
   "related": [],
   "summary": "serde_cbor is unmaintained",
   "details": "The `serde_cbor` crate is unmaintained. The author has archived the github repository.\n\nAlternatives proposed by the author:\n\n * [`ciborium`](https://crates.io/crates/ciborium)\n * [`minicbor`](https://crates.io/crates/minicbor)",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -18,7 +20,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -34,7 +37,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -50,5 +54,8 @@
       "type": "WEB",
       "url": "https://github.com/pyfisch/cbor"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

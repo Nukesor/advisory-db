@@ -1,4 +1,5 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2021-0059",
   "modified": "2021-05-04T01:28:43Z",
   "published": "2021-04-29T12:00:00Z",
@@ -6,6 +7,7 @@
   "related": [],
   "summary": "`aesni` has been merged into the `aes` crate",
   "details": "Please use the `aes` crate going forward. The new repository location is at:\n\n<https://github.com/RustCrypto/block-ciphers/tree/master/aes>\n\nAES-NI is now autodetected at runtime on `i686`/`x86-64` platforms.\nIf AES-NI is not present, the `aes` crate will fallback to a constant-time\nportable software implementation.\n\nTo prevent this fallback (and have absence of AES-NI result in an illegal\ninstruction crash instead), continue to pass the same RUSTFLAGS which were\npreviously required for the `aesni` crate to compile:\n\n```\nRUSTFLAGS=-Ctarget-feature=+aes,+ssse3\n```",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -18,7 +20,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -34,7 +37,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -50,5 +54,8 @@
       "type": "WEB",
       "url": "https://github.com/RustCrypto/block-ciphers/pull/200"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

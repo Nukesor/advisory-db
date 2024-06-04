@@ -1,4 +1,5 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2021-0078",
   "modified": "2021-10-19T22:14:35Z",
   "published": "2021-07-07T12:00:00Z",
@@ -9,6 +10,12 @@
   "related": [],
   "summary": "Lenient `hyper` header parsing of `Content-Length` could allow request smuggling",
   "details": "`hyper`'s HTTP header parser accepted, according to RFC 7230, illegal contents inside `Content-Length` headers.\nDue to this, upstream HTTP proxies that ignore the header may still forward them along if it chooses to ignore the error.\n\nTo be vulnerable, `hyper` must be used as an HTTP/1 server and using an HTTP proxy upstream that ignores the header's contents\nbut still forwards it. Due to all the factors that must line up, an attack exploiting this vulnerability is unlikely.",
+  "severity": [
+    {
+      "type": "CVSS_V3",
+      "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+    }
+  ],
   "affected": [
     {
       "package": {
@@ -21,7 +28,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -40,7 +48,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -56,5 +65,8 @@
       "type": "ADVISORY",
       "url": "https://github.com/hyperium/hyper/security/advisories/GHSA-f3pg-qwvg-p99c"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

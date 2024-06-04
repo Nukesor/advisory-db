@@ -1,13 +1,21 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2018-0010",
-  "modified": "2021-10-19T22:14:35Z",
+  "modified": "2023-06-13T13:10:24Z",
   "published": "2018-06-01T12:00:00Z",
   "aliases": [
-    "CVE-2018-20997"
+    "CVE-2018-20997",
+    "GHSA-xjxc-vfw2-cg96"
   ],
   "related": [],
   "summary": "Use after free in CMS Signing",
   "details": "Affected versions of the OpenSSL crate used structures after they'd been freed.",
+  "severity": [
+    {
+      "type": "CVSS_V3",
+      "score": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
   "affected": [
     {
       "package": {
@@ -20,7 +28,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -39,7 +48,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -55,5 +65,8 @@
       "type": "WEB",
       "url": "https://github.com/sfackler/rust-openssl/pull/942"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

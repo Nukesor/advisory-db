@@ -1,11 +1,15 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2018-0005",
-  "modified": "2020-10-02T01:29:11Z",
+  "modified": "2023-06-13T13:10:24Z",
   "published": "2018-09-17T12:00:00Z",
-  "aliases": [],
+  "aliases": [
+    "GHSA-39vw-qp34-rmwf"
+  ],
   "related": [],
   "summary": "Uncontrolled recursion leads to abort in deserialization",
   "details": "Affected versions of this crate did not properly check for recursion\nwhile deserializing aliases.\n\nThis allows an attacker to make a YAML file with an alias referring\nto itself causing an abort.\n\nThe flaw was corrected by checking the recursion depth.",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -18,7 +22,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -37,7 +42,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -53,5 +59,8 @@
       "type": "WEB",
       "url": "https://github.com/dtolnay/serde-yaml/pull/105"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

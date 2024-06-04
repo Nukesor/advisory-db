@@ -1,4 +1,5 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2021-0060",
   "modified": "2021-05-04T01:28:43Z",
   "published": "2021-04-29T12:00:00Z",
@@ -6,6 +7,7 @@
   "related": [],
   "summary": "`aes-soft` has been merged into the `aes` crate",
   "details": "Please use the `aes` crate going forward. The new repository location is at:\n\n<https://github.com/RustCrypto/block-ciphers/tree/master/aes>\n\nAES-NI is now autodetected at runtime on `i686`/`x86-64` platforms.\nIf AES-NI is not present, the `aes` crate will fallback to a constant-time\nportable software implementation.\n\nTo force the use of a constant-time portable implementation on these platforms,\neven if AES-NI is available, use the new `force-soft` feature of the `aes`\ncrate to disable autodetection.",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -18,7 +20,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -34,7 +37,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -50,5 +54,8 @@
       "type": "WEB",
       "url": "https://github.com/RustCrypto/block-ciphers/pull/200"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

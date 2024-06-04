@@ -1,4 +1,5 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2021-0101",
   "modified": "2021-09-10T15:58:27Z",
   "published": "2021-05-27T12:00:00Z",
@@ -9,6 +10,12 @@
   "related": [],
   "summary": "Permissions bypass in pleaser",
   "details": "Failure to normalize the umask in pleaser before 0.4 allows a local attacker to gain full root privileges if they are allowed to execute at least one command.",
+  "severity": [
+    {
+      "type": "CVSS_V3",
+      "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
   "affected": [
     {
       "package": {
@@ -21,7 +28,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [
@@ -42,7 +50,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -58,5 +67,8 @@
       "type": "WEB",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-31155"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

@@ -1,4 +1,5 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2020-0067",
   "modified": "2020-11-02T14:50:19Z",
   "published": "2020-11-02T12:00:00Z",
@@ -6,6 +7,7 @@
   "related": [],
   "summary": "crate has been renamed to `qp2p`",
   "details": "This crate has been renamed from `quic-p2p` to `qp2p`.\n\nThe new repository location is:\n\n<https://github.com/maidsafe/qp2p>",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -18,7 +20,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -34,7 +37,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -50,5 +54,8 @@
       "type": "WEB",
       "url": "https://github.com/maidsafe/qp2p/pull/141"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

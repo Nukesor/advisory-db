@@ -1,4 +1,5 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2020-0065",
   "modified": "2020-11-02T14:46:33Z",
   "published": "2020-11-02T12:00:00Z",
@@ -6,6 +7,7 @@
   "related": [],
   "summary": "crate has been renamed to `sn_fake_clock`",
   "details": "This crate has been renamed from `fake_clock` to `sn_fake_clock`.\n\nThe new repository location is:\n\n<https://github.com/maidsafe/sn_fake_clock>",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -18,7 +20,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -34,7 +37,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -50,5 +54,8 @@
       "type": "WEB",
       "url": "https://github.com/maidsafe/sn_fake_clock/pull/38"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

@@ -1,13 +1,21 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2019-0026",
-  "modified": "2021-10-19T22:14:35Z",
+  "modified": "2023-06-13T13:10:24Z",
   "published": "2019-10-11T12:00:00Z",
   "aliases": [
-    "CVE-2019-25002"
+    "CVE-2019-25002",
+    "GHSA-wrvc-72w7-xpmj"
   ],
   "related": [],
   "summary": "generichash::Digest::eq always return true",
   "details": "PartialEq implementation for generichash::Digest has compared itself to itself.\n\nDigest::eq always returns true and Digest::ne always returns false.",
+  "severity": [
+    {
+      "type": "CVSS_V3",
+      "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  ],
   "affected": [
     {
       "package": {
@@ -23,7 +31,8 @@
             "sodiumoxide::crypto::generichash::Digest::eq",
             "sodiumoxide::crypto::generichash::Digest::ne"
           ]
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -42,7 +51,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -58,5 +68,8 @@
       "type": "WEB",
       "url": "https://github.com/sodiumoxide/sodiumoxide/pull/381"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

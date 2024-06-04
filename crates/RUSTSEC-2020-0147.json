@@ -1,4 +1,5 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2020-0147",
   "modified": "2021-03-04T13:58:02Z",
   "published": "2020-02-11T12:00:00Z",
@@ -6,6 +7,7 @@
   "related": [],
   "summary": "rulinalg is unmaintained, use nalgebra instead",
   "details": "The `rulinalg` crate is no longer maintained, use [nalgebra](https://crates.io/crates/nalgebra)\ninstead.",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -18,7 +20,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -34,7 +37,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -50,5 +54,8 @@
       "type": "REPORT",
       "url": "https://github.com/AtheMathmo/rulinalg/issues/201#issuecomment-584749313"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

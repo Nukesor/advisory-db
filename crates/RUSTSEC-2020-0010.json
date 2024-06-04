@@ -1,4 +1,5 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2020-0010",
   "modified": "2020-10-02T01:29:11Z",
   "published": "2020-02-28T12:00:00Z",
@@ -6,6 +7,7 @@
   "related": [],
   "summary": "tiberius is unmaintained",
   "details": "The author of `tiberius` has archived the GitHub repository and left the\nfollowing note:\n\n> I do not have the time to overhaul the library and do not intend to further\n> maintain the 0.3 version relying on the old futures ecosystem.\n\nSuggested alternatives are:\n\n- [`odbc`](https://crates.io/crates/odbc)\n- [`sqlx`](https://github.com/launchbadge/sqlx/issues/116) (forthcoming)",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -18,7 +20,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -37,7 +40,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -53,5 +57,8 @@
       "type": "REPORT",
       "url": "https://github.com/RustSec/advisory-db/issues/261"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

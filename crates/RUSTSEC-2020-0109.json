@@ -1,4 +1,5 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2020-0109",
   "modified": "2021-01-20T19:29:04Z",
   "published": "2020-12-22T12:00:00Z",
@@ -6,6 +7,7 @@
   "related": [],
   "summary": "stderr is unmaintained; use eprintln instead",
   "details": "The `stderr` crate is no longer maintained by its current owner. \n\nThe author recommends using the `eprintln` macro from the standard library as a\nreplacement.",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -18,7 +20,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -34,7 +37,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -50,5 +54,8 @@
       "type": "REPORT",
       "url": "https://github.com/biluohc/stderr/issues/5"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }

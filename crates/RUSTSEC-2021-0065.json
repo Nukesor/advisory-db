@@ -1,13 +1,16 @@
 {
+  "schema_version": null,
   "id": "RUSTSEC-2021-0065",
-  "modified": "2021-11-06T20:37:35Z",
+  "modified": "2023-06-13T13:10:24Z",
   "published": "2021-05-07T12:00:00Z",
   "aliases": [
-    "CVE-2021-38187"
+    "CVE-2021-38187",
+    "GHSA-hc92-9h3m-c39j"
   ],
   "related": [],
   "summary": "anymap is unmaintained.",
   "details": "The `anymap` crate does not appear to be maintained, and the most recent\npublished version 0.12.1 includes a soundness bug. This has been\n[fixed](https://github.com/chris-morgan/anymap/pull/32) a few years ago, but\nwas never released.",
+  "severity": [],
   "affected": [
     {
       "package": {
@@ -20,7 +23,8 @@
           "arch": [],
           "os": [],
           "functions": []
-        }
+        },
+        "affected_functions": null
       },
       "database_specific": {
         "categories": [],
@@ -36,7 +40,8 @@
             }
           ]
         }
-      ]
+      ],
+      "versions": []
     }
   ],
   "references": [
@@ -52,5 +57,8 @@
       "type": "REPORT",
       "url": "https://github.com/chris-morgan/anymap/issues/37"
     }
-  ]
+  ],
+  "database_specific": {
+    "license": "CC0-1.0"
+  }
 }
