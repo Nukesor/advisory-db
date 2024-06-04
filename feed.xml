@@ -1,540 +1,53 @@
 <?xml version="1.0"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>RustSec Advisories</title><id>https://rustsec.org/feed.xml</id><updated>2022-03-15T00:00:00+00:00</updated><author><name>RustSec</name></author><icon>https://rustsec.org/favicon.ico</icon><link href="https://rustsec.org/feed.xml" rel="self" type="application/atom+xml"/><link href="https://rustsec.org/" rel="alternate" type="text/html"/><subtitle xml:lang="en">Security advisories filed against Rust crates</subtitle><entry><title>RUSTSEC-2022-0014: Vulnerability in openssl-src</title><id>https://rustsec.org/advisories/RUSTSEC-2022-0014.html</id><updated>2022-03-15T00:00:00+00:00</updated><category term="denial-of-service"/><link href="https://rustsec.org/advisories/RUSTSEC-2022-0014.html" rel="alternate" type="text/html" title="RUSTSEC-2022-0014: Vulnerability in openssl-src"/><published>2022-03-15T00:00:00+00:00</published><summary xml:lang="en">Infinite loop in `BN_mod_sqrt()` reachable when parsing certificates</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
+<feed xmlns="http://www.w3.org/2005/Atom"><title>RustSec Advisories</title><id>https://rustsec.org/feed.xml</id><updated>2024-06-03T12:00:00+00:00</updated><author><name>RustSec</name></author><icon>https://rustsec.org/favicon.ico</icon><link href="https://rustsec.org/feed.xml" rel="self" type="application/atom+xml"/><link href="https://rustsec.org/" rel="alternate" type="text/html"/><subtitle xml:lang="en">Security advisories filed against Rust crates</subtitle><entry><title>RUSTSEC-2024-0343: Vulnerability in nano-id</title><id>https://rustsec.org/advisories/RUSTSEC-2024-0343.html</id><updated>2024-06-03T12:00:00+00:00</updated><category term="crypto-failure"/><link href="https://rustsec.org/advisories/RUSTSEC-2024-0343.html" rel="alternate" type="text/html" title="RUSTSEC-2024-0343: Vulnerability in nano-id"/><published>2024-06-03T12:00:00+00:00</published><summary xml:lang="en">Reduced entropy due to inadequate character set usage</summary><content xml:lang="en" type="html">  &lt;article&gt;
     
         &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/openssl-src/RUSTSEC-2022-0014.md&quot;&gt;History&lt;/a&gt; ⋅ 
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/openssl-src/RUSTSEC-2022-0014.md&quot;&gt;Edit&lt;/a&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/nano-id/RUSTSEC-2024-0343.md&quot;&gt;History&lt;/a&gt; ⋅ 
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/nano-id/RUSTSEC-2024-0343.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2024-0343&quot;&gt;JSON (OSV)&lt;/a&gt;
         &lt;/span&gt;
     
 
     &lt;header&gt;
       &lt;h1&gt;
         
-        
-        RUSTSEC-2022-0014
+        RUSTSEC-2024-0343
         
       &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Infinite loop in &lt;code&gt;BN_mod_sqrt()&lt;/code&gt; reachable when parsing certificates&lt;/p&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Reduced entropy due to inadequate character set usage&lt;/p&gt;
 &lt;/span&gt;
     &lt;/header&gt;
 
     
-    
 
     &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2024-06-03&quot;&gt;
+          June  3, 2024
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
       &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
       &lt;dd&gt;
-        &lt;time datetime=&quot;2022-03-15&quot;&gt;
-          March 15, 2022
+        &lt;time datetime=&quot;2024-06-03&quot;&gt;
+          June  3, 2024
         &lt;/time&gt;
+        
       &lt;/dd&gt;
 
       &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
       &lt;dd&gt;
         
         
-        
-        &lt;a href=&quot;/packages/openssl-src.html&quot;&gt;openssl-src&lt;/a&gt;
-          (&lt;a href=&quot;https://crates.io/crates/openssl-src&quot;&gt;crates.io&lt;/a&gt;)
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/denial-of-service.html&quot;&gt;denial-of-service&lt;/a&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      
-
-      
-      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;
-            
-            
-            &lt;a href=&quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-0778&quot;&gt;CVE-2022-0778&lt;/a&gt;
-            
-          &lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;a href=&quot;https://www.openssl.org/news/secadv/20220315.txt&quot;&gt;
-          https://www.openssl.org/news/secadv/20220315.txt
-        &lt;/a&gt;
-      &lt;/dd&gt;
-      
-
-      
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;gt;=111.18, &amp;lt;300.0&lt;/code&gt;&lt;/li&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;gt;=300.0.5&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-      
-
-      
-      
-
-      
-      
-      
-    &lt;/dl&gt;
-
-    
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;The &lt;code&gt;BN_mod_sqrt()&lt;/code&gt; function, which computes a modular square root, contains
-a bug that can cause it to loop forever for non-prime moduli.&lt;/p&gt;
-&lt;p&gt;Internally this function is used when parsing certificates that contain
-elliptic curve public keys in compressed form or explicit elliptic curve
-parameters with a base point encoded in compressed form.&lt;/p&gt;
-&lt;p&gt;It is possible to trigger the infinite loop by crafting a certificate that
-has invalid explicit curve parameters.&lt;/p&gt;
-&lt;p&gt;Since certificate parsing happens prior to verification of the certificate
-signature, any process that parses an externally supplied certificate may thus
-be subject to a denial of service attack. The infinite loop can also be
-reached when parsing crafted private keys as they can contain explicit
-elliptic curve parameters.&lt;/p&gt;
-&lt;p&gt;Thus vulnerable situations include:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;TLS clients consuming server certificates&lt;/li&gt;
-&lt;li&gt;TLS servers consuming client certificates&lt;/li&gt;
-&lt;li&gt;Hosting providers taking certificates or private keys from customers&lt;/li&gt;
-&lt;li&gt;Certificate authorities parsing certification requests from subscribers&lt;/li&gt;
-&lt;li&gt;Anything else which parses ASN.1 elliptic curve parameters&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Also any other applications that use the &lt;code&gt;BN_mod_sqrt()&lt;/code&gt; where the attacker
-can control the parameter values are vulnerable to this DoS issue.&lt;/p&gt;
-
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2022-0013: Vulnerability in regex</title><id>https://rustsec.org/advisories/RUSTSEC-2022-0013.html</id><updated>2022-03-08T00:00:00+00:00</updated><category term="denial-of-service"/><link href="https://rustsec.org/advisories/RUSTSEC-2022-0013.html" rel="alternate" type="text/html" title="RUSTSEC-2022-0013: Vulnerability in regex"/><published>2022-03-08T00:00:00+00:00</published><summary xml:lang="en">Regexes with large repetitions on empty sub-expressions take a very long time to parse</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/regex/RUSTSEC-2022-0013.md&quot;&gt;History&lt;/a&gt; ⋅ 
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/regex/RUSTSEC-2022-0013.md&quot;&gt;Edit&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        
-        RUSTSEC-2022-0013
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Regexes with large repetitions on empty sub-expressions take a very long time to parse&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2022-03-08&quot;&gt;
-          March  8, 2022
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        
-        &lt;a href=&quot;/packages/regex.html&quot;&gt;regex&lt;/a&gt;
-          (&lt;a href=&quot;https://crates.io/crates/regex&quot;&gt;crates.io&lt;/a&gt;)
+        &lt;a href=&quot;/packages/nano-id.html&quot;&gt;nano-id&lt;/a&gt;
+          (&lt;a href=&quot;https://crates.io/crates/nano-id&quot;&gt;crates.io&lt;/a&gt;)
         
         
       &lt;/dd&gt;
 
       &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
       &lt;dd&gt;
-        
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/denial-of-service.html&quot;&gt;denial-of-service&lt;/a&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      
-
-      
-      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;
-            
-            
-            &lt;a href=&quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-24713&quot;&gt;CVE-2022-24713&lt;/a&gt;
-            
-          &lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;a href=&quot;https://groups.google.com/g/rustlang-security-announcements/c/NcNNL1Jq7Yw&quot;&gt;
-          https://groups.google.com/g/rustlang-security-announcements/c/NcNNL1Jq7Yw
-        &lt;/a&gt;
-      &lt;/dd&gt;
-      
-
-      
-      
-
-      
-      
-      &lt;dt id=&quot;cvss_score&quot;&gt;CVSS Score&lt;/dt&gt;
-      &lt;dd&gt;7.5 &lt;span class=&quot;tag high&quot;&gt;
-        HIGH
-      &lt;/span&gt;&lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss_details&quot;&gt;CVSS Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;dl&gt;
-          
-          
-          &lt;dt&gt;Attack vector&lt;/dt&gt;&lt;dd&gt;Network&lt;/dd&gt;
-          
-
-          
-          
-          &lt;dt&gt;Attack complexity&lt;/dt&gt;&lt;dd&gt;Low&lt;/d&gt;
-          
-
-          
-          
-          &lt;dt&gt;Privileges required&lt;/dt&gt;&lt;dd&gt;None&lt;/dd&gt;
-          
-
-          
-          
-          &lt;dt&gt;User interaction&lt;/dt&gt;&lt;dd&gt;None&lt;/dd&gt;
-          
-
-          
-          
-          &lt;dt&gt;Scope&lt;/dt&gt;&lt;dd&gt;Unchanged&lt;/dd&gt;
-          
-
-          
-          
-          &lt;dt&gt;Confidentiality&lt;/dt&gt;&lt;dd&gt;None&lt;/dd&gt;
-          
-
-          
-          
-          &lt;dt&gt;Integrity&lt;/dt&gt;&lt;dd&gt;None&lt;/dd&gt;
-          
-
-          
-          
-          &lt;dt&gt;Availability&lt;/dt&gt;&lt;dd&gt;High&lt;/dd&gt;
-          
-        &lt;/dl&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;cvss&quot;&gt;CVSS Vector&lt;/dt&gt;
-      &lt;dd&gt;&lt;a href=&quot;https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H&quot;&gt;CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H&lt;/a&gt;&lt;/dd&gt;
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;gt;=1.5.5&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-      
-
-      
-      
-
-      
-      
-      
-    &lt;/dl&gt;
-
-    
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;The Rust Security Response WG was notified that the &lt;code&gt;regex&lt;/code&gt; crate did not
-properly limit the complexity of the regular expressions (regex) it parses. An
-attacker could use this security issue to perform a denial of service, by
-sending a specially crafted regex to a service accepting untrusted regexes. No
-known vulnerability is present when parsing untrusted input with trusted
-regexes.&lt;/p&gt;
-&lt;p&gt;This issue has been assigned CVE-2022-24713. The severity of this vulnerability
-is &amp;quot;high&amp;quot; when the &lt;code&gt;regex&lt;/code&gt; crate is used to parse untrusted regexes. Other uses
-of the &lt;code&gt;regex&lt;/code&gt; crate are not affected by this vulnerability.&lt;/p&gt;
-&lt;h2&gt;Overview&lt;/h2&gt;
-&lt;p&gt;The &lt;code&gt;regex&lt;/code&gt; crate features built-in mitigations to prevent denial of service
-attacks caused by untrusted regexes, or untrusted input matched by trusted
-regexes. Those (tunable) mitigations already provide sane defaults to prevent
-attacks. This guarantee is documented and it&apos;s considered part of the crate&apos;s
-API.&lt;/p&gt;
-&lt;p&gt;Unfortunately a bug was discovered in the mitigations designed to prevent
-untrusted regexes to take an arbitrary amount of time during parsing, and it&apos;s
-possible to craft regexes that bypass such mitigations. This makes it possible
-to perform denial of service attacks by sending specially crafted regexes to
-services accepting user-controlled, untrusted regexes.&lt;/p&gt;
-&lt;h2&gt;Affected versions&lt;/h2&gt;
-&lt;p&gt;All versions of the &lt;code&gt;regex&lt;/code&gt; crate before or equal to 1.5.4 are affected by this
-issue. The fix is include starting from  &lt;code&gt;regex&lt;/code&gt; 1.5.5.&lt;/p&gt;
-&lt;h2&gt;Mitigations&lt;/h2&gt;
-&lt;p&gt;We recommend everyone accepting user-controlled regexes to upgrade immediately
-to the latest version of the &lt;code&gt;regex&lt;/code&gt; crate.&lt;/p&gt;
-&lt;p&gt;Unfortunately there is no fixed set of problematic regexes, as there are
-practically infinite regexes that could be crafted to exploit this
-vulnerability. Because of this, we do not recommend denying known problematic
-regexes.&lt;/p&gt;
-&lt;h2&gt;Acknowledgements&lt;/h2&gt;
-&lt;p&gt;We want to thank Addison Crump for responsibly disclosing this to us according
-to the &lt;a href=&quot;https://www.rust-lang.org/policies/security&quot;&gt;Rust security policy&lt;/a&gt;, and for helping review the fix.&lt;/p&gt;
-&lt;p&gt;We also want to thank Andrew Gallant for developing the fix, and Pietro Albini
-for coordinating the disclosure and writing this advisory.&lt;/p&gt;
-
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2022-0012: Vulnerability in arrow2</title><id>https://rustsec.org/advisories/RUSTSEC-2022-0012.html</id><updated>2022-03-04T00:00:00+00:00</updated><category term="memory-corruption"/><link href="https://rustsec.org/advisories/RUSTSEC-2022-0012.html" rel="alternate" type="text/html" title="RUSTSEC-2022-0012: Vulnerability in arrow2"/><published>2022-03-04T00:00:00+00:00</published><summary xml:lang="en">Arrow2 allows double free in `safe` code</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/arrow2/RUSTSEC-2022-0012.md&quot;&gt;History&lt;/a&gt; ⋅ 
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/arrow2/RUSTSEC-2022-0012.md&quot;&gt;Edit&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        
-        RUSTSEC-2022-0012
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Arrow2 allows double free in &lt;code&gt;safe&lt;/code&gt; code&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2022-03-04&quot;&gt;
-          March  4, 2022
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        
-        &lt;a href=&quot;/packages/arrow2.html&quot;&gt;arrow2&lt;/a&gt;
-          (&lt;a href=&quot;https://crates.io/crates/arrow2&quot;&gt;crates.io&lt;/a&gt;)
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/memory-corruption.html&quot;&gt;memory-corruption&lt;/a&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      
-
-      
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;a href=&quot;https://github.com/jorgecarleitao/arrow2/issues/880&quot;&gt;
-          https://github.com/jorgecarleitao/arrow2/issues/880
-        &lt;/a&gt;
-      &lt;/dd&gt;
-      
-
-      
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;gt;=0.7.1, &amp;lt;0.8&lt;/code&gt;&lt;/li&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;gt;=0.8.2, &amp;lt;0.9&lt;/code&gt;&lt;/li&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;gt;=0.9.2, &amp;lt;0.10&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-      
-
-      
-      
-
-      
-      
-      
-    &lt;/dl&gt;
-
-    
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;The struct &lt;code&gt;Ffi_ArrowArray&lt;/code&gt; implements &lt;code&gt;#derive(Clone)&lt;/code&gt; that is inconsistent with
-its custom implementation of &lt;code&gt;Drop&lt;/code&gt;, resulting in a double free when cloned.&lt;/p&gt;
-&lt;p&gt;Cloning this struct in &lt;code&gt;safe&lt;/code&gt; results in a segmentation fault, which is unsound.&lt;/p&gt;
-&lt;p&gt;This derive was removed from this struct. All users are advised to either:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;bump the patch version of this crate (for versions &lt;code&gt;v0.7,v0.8,v0.9&lt;/code&gt;), or&lt;/li&gt;
-&lt;li&gt;migrate to a more recent version of  the crate (when using &lt;code&gt;&amp;lt;0.7&lt;/code&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Doing so elimitates this vulnerability (code no longer compiles).&lt;/p&gt;
-
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2022-0011: Vulnerability in rust-crypto</title><id>https://rustsec.org/advisories/RUSTSEC-2022-0011.html</id><updated>2022-02-28T00:00:00+00:00</updated><category term="crypto-failure"/><link href="https://rustsec.org/advisories/RUSTSEC-2022-0011.html" rel="alternate" type="text/html" title="RUSTSEC-2022-0011: Vulnerability in rust-crypto"/><published>2022-02-28T00:00:00+00:00</published><summary xml:lang="en">Miscomputation when performing AES encryption in rust-crypto</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/rust-crypto/RUSTSEC-2022-0011.md&quot;&gt;History&lt;/a&gt; ⋅ 
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/rust-crypto/RUSTSEC-2022-0011.md&quot;&gt;Edit&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        
-        RUSTSEC-2022-0011
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Miscomputation when performing AES encryption in rust-crypto&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2022-02-28&quot;&gt;
-          February 28, 2022
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        
-        &lt;a href=&quot;/packages/rust-crypto.html&quot;&gt;rust-crypto&lt;/a&gt;
-          (&lt;a href=&quot;https://crates.io/crates/rust-crypto&quot;&gt;crates.io&lt;/a&gt;)
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
         
         Vulnerability
         
@@ -552,21 +65,1065 @@ its custom implementation of &lt;code&gt;Drop&lt;/code&gt;, resulting in a doubl
       
 
       
+
+      
+
+      
+
+      
+
+      
+      &lt;dt id=&quot;cvss_score&quot;&gt;CVSS Score&lt;/dt&gt;
+      &lt;dd&gt;9.4 &lt;span class=&quot;tag critical&quot;&gt;
+        CRITICAL
+      &lt;/span&gt;&lt;/dd&gt;
+
+      &lt;dt id=&quot;cvss_details&quot;&gt;CVSS Details&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;dl&gt;
+          
+          &lt;dt&gt;Attack vector&lt;/dt&gt;&lt;dd&gt;Network&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;Attack complexity&lt;/dt&gt;&lt;dd&gt;Low&lt;/d&gt;
+          
+
+          
+          &lt;dt&gt;Privileges required&lt;/dt&gt;&lt;dd&gt;None&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;User interaction&lt;/dt&gt;&lt;dd&gt;None&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;Scope&lt;/dt&gt;&lt;dd&gt;Unchanged&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;Confidentiality&lt;/dt&gt;&lt;dd&gt;High&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;Integrity&lt;/dt&gt;&lt;dd&gt;High&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;Availability&lt;/dt&gt;&lt;dd&gt;Low&lt;/dd&gt;
+          
+        &lt;/dl&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;cvss&quot;&gt;CVSS Vector&lt;/dt&gt;
+      &lt;dd&gt;&lt;a href=&quot;https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L&quot;&gt;CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L&lt;/a&gt;&lt;/dd&gt;
+
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;gt;=0.4.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+    &lt;dl&gt;
+      &lt;dt&gt;Affected Functions&lt;/dt&gt;
+      &lt;dd&gt;Version&lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;nano_id::base58&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;lt;0.4.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;nano_id::base62&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;lt;0.4.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;nano_id::gen&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;lt;0.4.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+    &lt;/dl&gt;
+    
+
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;h2&gt;Description&lt;/h2&gt;
+&lt;p&gt;Affected versions of the nano-id crate incorrectly generated IDs using a reduced character set in the &lt;code&gt;nano_id::base62&lt;/code&gt; and &lt;code&gt;nano_id::base58&lt;/code&gt; functions. Specifically, the &lt;code&gt;base62&lt;/code&gt; function used a character set of 32 symbols instead of the intended 62 symbols, and the &lt;code&gt;base58&lt;/code&gt; function used a character set of 16 symbols instead of the intended 58 symbols. Additionally, the &lt;code&gt;nano_id::gen&lt;/code&gt; macro is also affected when a custom character set that is not a power of 2 in size is specified.&lt;/p&gt;
+&lt;p&gt;It should be noted that &lt;code&gt;nano_id::base64&lt;/code&gt; is not affected by this vulnerability.&lt;/p&gt;
+&lt;h2&gt;Impact&lt;/h2&gt;
+&lt;p&gt;This can result in a significant reduction in entropy, making the generated IDs predictable and vulnerable to brute-force attacks when the IDs are used in security-sensitive contexts such as session tokens or unique identifiers.&lt;/p&gt;
+&lt;h2&gt;Patches&lt;/h2&gt;
+&lt;p&gt;The flaws were corrected in commit &lt;a href=&quot;https://github.com/viz-rs/nano-id/commit/a9022772b2f1ce38929b5b81eccc670ac9d3ab23&quot;&gt;a9022772b2f1ce38929b5b81eccc670ac9d3ab23&lt;/a&gt; by updating the the &lt;code&gt;nano_id::gen&lt;/code&gt; macro to use all specified characters correctly.&lt;/p&gt;
+&lt;h2&gt;PoC&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&quot;language-rust&quot;&gt;use std::collections::BTreeSet;
+
+fn main() {
+    test_base58();
+    test_base62();
+}
+
+fn test_base58() {
+    let mut produced_symbols = BTreeSet::new();
+
+    for _ in 0..100_000 {
+id = &amp;quot;RUSTSEC-2024-0343&amp;quot;
+        for c in id.chars() {
+            produced_symbols.insert(c);
+        }
+    }
+
+    println!(
+        &amp;quot;{} symbols generated from nano_id::base58&amp;quot;,
+        produced_symbols.len()
+    );
+}
+
+fn test_base62() {
+    let mut produced_symbols = BTreeSet::new();
+
+    for _ in 0..100_000 {
+id = &amp;quot;RUSTSEC-2024-0343&amp;quot;
+        for c in id.chars() {
+            produced_symbols.insert(c);
+        }
+    }
+
+    println!(
+        &amp;quot;{} symbols generated from nano_id::base62&amp;quot;,
+        produced_symbols.len()
+    );
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2024-0342: Vulnerability in vodozemac</title><id>https://rustsec.org/advisories/RUSTSEC-2024-0342.html</id><updated>2024-05-20T12:00:00+00:00</updated><category term="memory-exposure"/><link href="https://rustsec.org/advisories/RUSTSEC-2024-0342.html" rel="alternate" type="text/html" title="RUSTSEC-2024-0342: Vulnerability in vodozemac"/><published>2024-05-20T12:00:00+00:00</published><summary xml:lang="en">Degraded secret zeroization capabilities</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/vodozemac/RUSTSEC-2024-0342.md&quot;&gt;History&lt;/a&gt; ⋅ 
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/vodozemac/RUSTSEC-2024-0342.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2024-0342&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2024-0342
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Degraded secret zeroization capabilities&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2024-05-02&quot;&gt;
+          May  2, 2024
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2024-05-20&quot;&gt;
+          May 20, 2024
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/vodozemac.html&quot;&gt;vodozemac&lt;/a&gt;
+          (&lt;a href=&quot;https://crates.io/crates/vodozemac&quot;&gt;crates.io&lt;/a&gt;)
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/memory-exposure.html&quot;&gt;memory-exposure&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34063&quot;&gt;CVE-2024-34063&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://github.com/advisories/GHSA-c3hm-hxwf-g5c6&quot;&gt;GHSA-c3hm-hxwf-g5c6&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/matrix-org/vodozemac/security/advisories/GHSA-c3hm-hxwf-g5c6&quot;&gt;
+              https://github.com/matrix-org/vodozemac/security/advisories/GHSA-c3hm-hxwf-g5c6
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;gt;=0.6.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;unaffected&quot;&gt;Unaffected&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;lt;0.5.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;Versions 0.5.0 and 0.5.1 of vodozemac have degraded secret zeroization capabilities,
+due to changes in third-party cryptographic dependencies (the Dalek crates),
+which moved secret zeroization capabilities behind a feature flag while
+vodozemac disabled the default feature set.&lt;/p&gt;
+&lt;h2&gt;Impact&lt;/h2&gt;
+&lt;p&gt;The degraded zeroization capabilities could result in the production of more
+memory copies of encryption secrets and secrets could linger in memory longer
+than necessary. This marginally increases the risk of sensitive data exposure.&lt;/p&gt;
+&lt;p&gt;Overall, we consider the impact of this issue to be low. Although cryptographic
+best practices recommend the clearing of sensitive information from memory once
+it&apos;s no longer needed, the inherent limitations of Rust regarding absolute
+zeroization reduce the practical severity of this lapse.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2024-0341: Vulnerability in tls-listener</title><id>https://rustsec.org/advisories/RUSTSEC-2024-0341.html</id><updated>2024-05-21T12:00:00+00:00</updated><category term="denial-of-service"/><link href="https://rustsec.org/advisories/RUSTSEC-2024-0341.html" rel="alternate" type="text/html" title="RUSTSEC-2024-0341: Vulnerability in tls-listener"/><published>2024-05-20T12:00:00+00:00</published><summary xml:lang="en">Slow loris vulnerability with default configuration</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/tls-listener/RUSTSEC-2024-0341.md&quot;&gt;History&lt;/a&gt; ⋅ 
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/tls-listener/RUSTSEC-2024-0341.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2024-0341&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2024-0341
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Slow loris vulnerability with default configuration&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2024-03-15&quot;&gt;
+          March 15, 2024
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2024-05-20&quot;&gt;
+          May 20, 2024
+        &lt;/time&gt;
+        
+        &lt;time datetime=&quot;2024-05-21&quot;&gt;
+          (last modified: May 21, 2024)
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/tls-listener.html&quot;&gt;tls-listener&lt;/a&gt;
+          (&lt;a href=&quot;https://crates.io/crates/tls-listener&quot;&gt;crates.io&lt;/a&gt;)
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;a href=&quot;/categories/denial-of-service.html&quot;&gt;denial-of-service&lt;/a&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-28854&quot;&gt;CVE-2024-28854&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://github.com/advisories/GHSA-2qph-qpvm-2qf7&quot;&gt;GHSA-2qph-qpvm-2qf7&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/tmccombs/tls-listener/security/advisories/GHSA-2qph-qpvm-2qf7&quot;&gt;
+              https://github.com/tmccombs/tls-listener/security/advisories/GHSA-2qph-qpvm-2qf7
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+
+      
+      &lt;dt id=&quot;cvss_score&quot;&gt;CVSS Score&lt;/dt&gt;
+      &lt;dd&gt;7.5 &lt;span class=&quot;tag high&quot;&gt;
+        HIGH
+      &lt;/span&gt;&lt;/dd&gt;
+
+      &lt;dt id=&quot;cvss_details&quot;&gt;CVSS Details&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;dl&gt;
+          
+          &lt;dt&gt;Attack vector&lt;/dt&gt;&lt;dd&gt;Network&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;Attack complexity&lt;/dt&gt;&lt;dd&gt;Low&lt;/d&gt;
+          
+
+          
+          &lt;dt&gt;Privileges required&lt;/dt&gt;&lt;dd&gt;None&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;User interaction&lt;/dt&gt;&lt;dd&gt;None&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;Scope&lt;/dt&gt;&lt;dd&gt;Unchanged&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;Confidentiality&lt;/dt&gt;&lt;dd&gt;None&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;Integrity&lt;/dt&gt;&lt;dd&gt;None&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;Availability&lt;/dt&gt;&lt;dd&gt;High&lt;/dd&gt;
+          
+        &lt;/dl&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;cvss&quot;&gt;CVSS Vector&lt;/dt&gt;
+      &lt;dd&gt;&lt;a href=&quot;https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H&quot;&gt;CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H&lt;/a&gt;&lt;/dd&gt;
+
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;gt;=0.10.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+    &lt;dl&gt;
+      &lt;dt&gt;Affected Functions&lt;/dt&gt;
+      &lt;dd&gt;Version&lt;/dd&gt;
+      
+      &lt;dt&gt;&lt;code&gt;tls_listener::TlsListener::new&lt;/code&gt;&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;lt;0.10.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+    &lt;/dl&gt;
+    
+
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;p&gt;tls-listener is a rust lang wrapper around a connection listener to support TLS. With the default configuration of tls-listener, a malicious user can open 6.4 &lt;code&gt;TcpStream&lt;/code&gt;s a second, sending 0 bytes, and can trigger a DoS. The default configuration options make any public service using &lt;code&gt;TlsListener::new()&lt;/code&gt; vulnerable to a slow-loris DoS attack. This impacts any publicly accessible service using the default configuration of tls-listener in versions prior to 0.10.0. Users are advised to upgrade. Users unable to upgrade may mitigate this by passing a large value, such as &lt;code&gt;usize::MAX&lt;/code&gt; as the parameter to &lt;code&gt;Builder::max_handshakes&lt;/code&gt;.&lt;/p&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2024-0340: Vulnerability in tor-circmgr</title><id>https://rustsec.org/advisories/RUSTSEC-2024-0340.html</id><updated>2024-05-21T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2024-0340.html" rel="alternate" type="text/html" title="RUSTSEC-2024-0340: Vulnerability in tor-circmgr"/><published>2024-05-20T12:00:00+00:00</published><summary xml:lang="en">Tor path lengths too short when &amp;quot;full Vanguards&amp;quot; configured</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/tor-circmgr/RUSTSEC-2024-0340.md&quot;&gt;History&lt;/a&gt; ⋅ 
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/tor-circmgr/RUSTSEC-2024-0340.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2024-0340&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2024-0340
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Tor path lengths too short when &amp;quot;full Vanguards&amp;quot; configured&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2024-05-15&quot;&gt;
+          May 15, 2024
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2024-05-20&quot;&gt;
+          May 20, 2024
+        &lt;/time&gt;
+        
+        &lt;time datetime=&quot;2024-05-21&quot;&gt;
+          (last modified: May 21, 2024)
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/tor-circmgr.html&quot;&gt;tor-circmgr&lt;/a&gt;
+          (&lt;a href=&quot;https://crates.io/crates/tor-circmgr&quot;&gt;crates.io&lt;/a&gt;)
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+
+      
       &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
       &lt;dd&gt;
         
-          &lt;a href=&quot;/keywords/aesni.html&quot;&gt;#aesni&lt;/a&gt;
+          &lt;a href=&quot;/keywords/tor.html&quot;&gt;#tor&lt;/a&gt;
         
+          &lt;a href=&quot;/keywords/privacy.html&quot;&gt;#privacy&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/information-leak.html&quot;&gt;#information-leak&lt;/a&gt;
+        
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-35313&quot;&gt;CVE-2024-35313&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://github.com/advisories/GHSA-c96h-cxx6-rmg9&quot;&gt;GHSA-c96h-cxx6-rmg9&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+          &lt;li&gt;
+            
+            TROVE-2024-004
+            
+          &lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://gitlab.torproject.org/tpo/core/arti/-/issues/1409&quot;&gt;
+              https://gitlab.torproject.org/tpo/core/arti/-/issues/1409
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;related&quot;&gt;Related&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;
+            
+            TROVE-2024-003
+            
+          &lt;/li&gt;
+          
+        &lt;/ul&gt;
       &lt;/dd&gt;
       
 
       
       
 
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;gt;=0.18.1&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
       
+      &lt;dt id=&quot;unaffected&quot;&gt;Unaffected&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;lt;0.18.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
       
 
       
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;h2&gt;Description&lt;/h2&gt;
+&lt;p&gt;When building anonymizing circuits to or from an onion service with
+full vanguards enabled,
+the circuit manager code would build the circuits with one hop too few.&lt;/p&gt;
+&lt;h2&gt;Impact&lt;/h2&gt;
+&lt;p&gt;This makes users of this code more vulnerable to some kinds of traffic analysis
+when they run or visit onion services.&lt;/p&gt;
+&lt;h2&gt;Vulnerable configurations and use cases&lt;/h2&gt;
+&lt;p&gt;Arti configured with &amp;quot;full vangaurds&amp;quot; is vulnerable.&lt;/p&gt;
+&lt;p&gt;Only users who make connections to Onion Services
+(Tor Hidden Services) are affected.
+Note, however, that when used as a browser proxy,
+malicious web pages can typically make such connections.&lt;/p&gt;
+&lt;h2&gt;Mitigation&lt;/h2&gt;
+&lt;p&gt;Preventing access to Tor Hidden Services will avoid the problem,
+with corresponding loss of functionality.
+This can be achieved in the Arti configuration file with:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[address_filter]
+allow_onion_addrs = false
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Changing the configuration (eg to turn off vanguards)
+reclassifies the behaviour as &amp;quot;as configured&amp;quot;,
+but reduces security rather than improving it,
+so is not a mitigation.&lt;/p&gt;
+&lt;h2&gt;Resolution&lt;/h2&gt;
+&lt;p&gt;Rebuild &lt;code&gt;arti&lt;/code&gt; (or other affected applications)
+with a fixed version of &lt;code&gt;tor-circmgr&lt;/code&gt;:
+0.18.1 or later.&lt;/p&gt;
+&lt;p&gt;The fixed &lt;code&gt;tor-circmgr&lt;/code&gt; is on crates.io and available in
+&lt;a href=&quot;https://gitlab.torproject.org/tpo/core/arti&quot;&gt;the upstream git repository&lt;/a&gt;
+at signed tag &lt;code&gt;arti-v1.2.3&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;Note about older versions&lt;/h3&gt;
+&lt;p&gt;Even though earlier versions are classified as &amp;quot;not affected&amp;quot;,
+this is because in those versions the Vanguards feature
+is experimental, or absent.
+Downgrading worsens security, rather than improving it.&lt;/p&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://gitlab.torproject.org/tpo/core/arti/-/issues/1400&quot;&gt;arti#1400&lt;/a&gt;:
+the ticket in the Arti bugtracker.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://gitlab.torproject.org/tpo/core/team/-/wikis/NetworkTeam/TROVE&quot;&gt;TROVE&lt;/a&gt;
+Tor Project vulnerability database.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://gitlab.torproject.org/tpo/core/arti/-/issues/1409&quot;&gt;arti#1409&lt;/a&gt;:
+the similar bug with the vanguards lite feature.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2024-0339: Vulnerability in tor-circmgr</title><id>https://rustsec.org/advisories/RUSTSEC-2024-0339.html</id><updated>2024-05-21T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2024-0339.html" rel="alternate" type="text/html" title="RUSTSEC-2024-0339: Vulnerability in tor-circmgr"/><published>2024-05-20T12:00:00+00:00</published><summary xml:lang="en">Tor path lengths too short when &amp;quot;Vanguards lite&amp;quot; configured</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/tor-circmgr/RUSTSEC-2024-0339.md&quot;&gt;History&lt;/a&gt; ⋅ 
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/tor-circmgr/RUSTSEC-2024-0339.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2024-0339&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2024-0339
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Tor path lengths too short when &amp;quot;Vanguards lite&amp;quot; configured&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2024-05-15&quot;&gt;
+          May 15, 2024
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2024-05-20&quot;&gt;
+          May 20, 2024
+        &lt;/time&gt;
+        
+        &lt;time datetime=&quot;2024-05-21&quot;&gt;
+          (last modified: May 21, 2024)
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/tor-circmgr.html&quot;&gt;tor-circmgr&lt;/a&gt;
+          (&lt;a href=&quot;https://crates.io/crates/tor-circmgr&quot;&gt;crates.io&lt;/a&gt;)
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        Vulnerability
+        
+      &lt;/dd&gt;
+
+      
+
+      
+      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
+      &lt;dd&gt;
+        
+          &lt;a href=&quot;/keywords/tor.html&quot;&gt;#tor&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/privacy.html&quot;&gt;#privacy&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/information-leak.html&quot;&gt;#information-leak&lt;/a&gt;
+        
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-35312&quot;&gt;CVE-2024-35312&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-35313&quot;&gt;CVE-2024-35313&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://github.com/advisories/GHSA-9328-gcfq-p269&quot;&gt;GHSA-9328-gcfq-p269&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://github.com/advisories/GHSA-c96h-cxx6-rmg9&quot;&gt;GHSA-c96h-cxx6-rmg9&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+          &lt;li&gt;
+            
+            TROVE-2024-003
+            
+          &lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://gitlab.torproject.org/tpo/core/arti/-/issues/1409&quot;&gt;
+              https://gitlab.torproject.org/tpo/core/arti/-/issues/1409
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;related&quot;&gt;Related&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;
+            
+            TROVE-2024-004
+            
+          &lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      
+
+      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;gt;=0.18.1&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+        
+      &lt;/dd&gt;
+
+      
+      &lt;dt id=&quot;unaffected&quot;&gt;Unaffected&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;lt;0.18.0&lt;/code&gt;&lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
+      
+
+      
+      
+    &lt;/dl&gt;
+
+    
+    
+
+    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+    &lt;h2&gt;Description&lt;/h2&gt;
+&lt;p&gt;When building anonymizing circuits to or from an onion service with
+&apos;lite&apos; vanguards (the default) enabled,
+the circuit manager code would build the circuits with one hop too few.&lt;/p&gt;
+&lt;h2&gt;Impact&lt;/h2&gt;
+&lt;p&gt;This makes users of this code more vulnerable to some kinds of traffic analysis
+when they run or visit onion services.&lt;/p&gt;
+&lt;h2&gt;Vulnerable configurations and use cases&lt;/h2&gt;
+&lt;p&gt;Arti configured with &amp;quot;vangaurds lite&amp;quot; is vulnerable;
+this is the default.&lt;/p&gt;
+&lt;p&gt;Only users who make connections to Onion Services
+(Tor Hidden Services) are affected.
+Note, however, that when used as a browser proxy,
+malicious web pages can typically make such connections.&lt;/p&gt;
+&lt;h2&gt;Mitigation&lt;/h2&gt;
+&lt;p&gt;Enable the &amp;quot;full vanguards&amp;quot; feature.
+This has some cost in terms of performance, reliability,
+and impact on the Tor Network.&lt;/p&gt;
+&lt;p&gt;(Arti configured with &amp;quot;full vanguards&amp;quot; has a similar bug,
+TROVE-2024-04,
+so this will not deliver the full incressed security of &amp;quot;full vanguards&amp;quot;;
+but the security level of affected versions of Arti
+configured with &amp;quot;full vanguards&amp;quot; still exceeds
+the intended security level of the &amp;quot;vanguards lite&amp;quot; configuration.)&lt;/p&gt;
+&lt;p&gt;Alternatively,
+preventing access to Tor Hidden Services will avoid the problem,
+with corresponding loss of functionality.
+This can be achieved in the Arti configuration file with:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[address_filter]
+allow_onion_addrs = false
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Resolution&lt;/h2&gt;
+&lt;p&gt;Rebuild &lt;code&gt;arti&lt;/code&gt; (or other affected applications)
+with a fixed version of &lt;code&gt;tor-circmgr&lt;/code&gt;:
+0.18.1 or later.&lt;/p&gt;
+&lt;p&gt;The fixed &lt;code&gt;tor-circmgr&lt;/code&gt; is on crates.io and available in
+&lt;a href=&quot;https://gitlab.torproject.org/tpo/core/arti&quot;&gt;the upstream git repository&lt;/a&gt;
+at signed tag &lt;code&gt;arti-v1.2.3&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;Note about older versions&lt;/h3&gt;
+&lt;p&gt;Even though earlier versions are classified as &amp;quot;not affected&amp;quot;,
+this is because in those versions the Vanguards feature
+is experimental, or absent.
+Downgrading worsens security, rather than improving it.&lt;/p&gt;
+&lt;h2&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://gitlab.torproject.org/tpo/core/arti/-/issues/1409&quot;&gt;arti#1409&lt;/a&gt;:
+the ticket in the Arti bugtracker.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://gitlab.torproject.org/tpo/core/team/-/wikis/NetworkTeam/TROVE&quot;&gt;TROVE&lt;/a&gt;
+Tor Project vulnerability database.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://gitlab.torproject.org/tpo/core/arti/-/issues/1400&quot;&gt;arti#1400&lt;/a&gt;:
+the similar bug with the full vanguards feature.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
+    
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2024-0337: zip_next is unmaintained</title><id>https://rustsec.org/advisories/RUSTSEC-2024-0337.html</id><updated>2024-04-24T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2024-0337.html" rel="alternate" type="text/html" title="RUSTSEC-2024-0337: zip_next is unmaintained"/><published>2024-04-24T12:00:00+00:00</published><summary xml:lang="en">The crate `zip_next` has been renamed to `zip`.</summary><content xml:lang="en" type="html">  &lt;article&gt;
+    
+        &lt;span class=&quot;floating-menu&quot;&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/zip_next/RUSTSEC-2024-0337.md&quot;&gt;History&lt;/a&gt; ⋅ 
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/zip_next/RUSTSEC-2024-0337.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2024-0337&quot;&gt;JSON (OSV)&lt;/a&gt;
+        &lt;/span&gt;
+    
+
+    &lt;header&gt;
+      &lt;h1&gt;
+        
+        RUSTSEC-2024-0337
+        
+      &lt;/h1&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;The crate &lt;code&gt;zip_next&lt;/code&gt; has been renamed to &lt;code&gt;zip&lt;/code&gt;.&lt;/p&gt;
+&lt;/span&gt;
+    &lt;/header&gt;
+
+    
+
+    &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2024-04-20&quot;&gt;
+          April 20, 2024
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2024-04-24&quot;&gt;
+          April 24, 2024
+        &lt;/time&gt;
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        
+        &lt;a href=&quot;/packages/zip_next.html&quot;&gt;zip_next&lt;/a&gt;
+          (&lt;a href=&quot;https://crates.io/crates/zip_next&quot;&gt;crates.io&lt;/a&gt;)
+        
+        
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
+      &lt;dd&gt;
+        
+        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
+        Unmaintained
+        
+      &lt;/dd&gt;
+
+      
+
+      
+
+      
+
+      
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/zip-rs/zip/issues/446&quot;&gt;
+              https://github.com/zip-rs/zip/issues/446
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
       
 
       
@@ -582,173 +1139,70 @@ its custom implementation of &lt;code&gt;Drop&lt;/code&gt;, resulting in a doubl
       &lt;/dd&gt;
 
       
-      
 
-      
-      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
-      &lt;dd&gt;
-        
-          &lt;a href=&quot;/keywords/aesni.html&quot;&gt;#aesni&lt;/a&gt;
-        
-      &lt;/dd&gt;
-      
-
-      
       
       
     &lt;/dl&gt;
 
     
-
-    
     
 
     &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;The following Rust program demonstrates some strangeness in AES encryption - if you have an immutable key slice and then operate on that slice, you get different encryption output than if you operate on a copy of that key.&lt;/p&gt;
-&lt;p&gt;For these functions, we expect that extending a 16 byte key to a 32 byte key by repeating it gives the same encrypted data, because the underlying rust-crypto functions repeat key data up to the necessary key size for the cipher.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-rust&quot;&gt;use crypto::{
-    aes, blockmodes, buffer,
-    buffer::{BufferResult, ReadBuffer, WriteBuffer},
-    symmetriccipher,
-};
+    &lt;p&gt;Please switch to the new name. &lt;code&gt;zip_next&lt;/code&gt; will receive no further releases.&lt;/p&gt;
 
-fn encrypt(
-    key: &amp;amp;[u8],
-    iv: &amp;amp;[u8],
-    data: &amp;amp;str,
-) -&amp;gt; Result&amp;lt;String, symmetriccipher::SymmetricCipherError&amp;gt; {
-    let mut encryptor =
-        aes::cbc_encryptor(aes::KeySize::KeySize256, key, iv, blockmodes::PkcsPadding);
 
-    let mut encrypted_data = Vec::&amp;lt;u8&amp;gt;::new();
-    let mut read_buffer = buffer::RefReadBuffer::new(data.as_bytes());
-    let mut buffer = [0; 4096];
-    let mut write_buffer = buffer::RefWriteBuffer::new(&amp;amp;mut buffer);
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
 
-    loop {
-        let result = encryptor.encrypt(&amp;amp;mut read_buffer, &amp;amp;mut write_buffer, true)?;
-
-        encrypted_data.extend(
-            write_buffer
-                .take_read_buffer()
-                .take_remaining()
-                .iter()
-                .copied(),
-        );
-
-        match result {
-            BufferResult::BufferUnderflow =&amp;gt; break,
-            BufferResult::BufferOverflow =&amp;gt; {}
-        }
-    }
-
-    Ok(hex::encode(encrypted_data))
-}
-
-fn working() {
-    let data = &amp;quot;data&amp;quot;;
-    let iv = [
-        0xF0, 0xF1, 0xF2, 0xF3, 0xF4, 0xF5, 0xF6, 0xF7, 0xF8, 0xF9, 0xFA, 0xFB, 0xFC, 0xFD, 0xFE,
-        0xFF,
-    ];
-    let key = [
-        0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E,
-        0x0F,
-    ];
-    // The copy here makes the code work.
-    let key_copy = key;
-    let key2: Vec&amp;lt;u8&amp;gt; = key_copy.iter().cycle().take(32).copied().collect();
-    println!(&amp;quot;key1:{} key2: {}&amp;quot;, hex::encode(&amp;amp;key), hex::encode(&amp;amp;key2));
-
-    let x1 = encrypt(&amp;amp;key, &amp;amp;iv, data).unwrap();
-    println!(&amp;quot;X1: {}&amp;quot;, x1);
-
-    let x2 = encrypt(&amp;amp;key2, &amp;amp;iv, data).unwrap();
-    println!(&amp;quot;X2: {}&amp;quot;, x2);
-
-    assert_eq!(x1, x2);
-}
-
-fn broken() {
-    let data = &amp;quot;data&amp;quot;;
-    let iv = [
-        0xF0, 0xF1, 0xF2, 0xF3, 0xF4, 0xF5, 0xF6, 0xF7, 0xF8, 0xF9, 0xFA, 0xFB, 0xFC, 0xFD, 0xFE,
-        0xFF,
-    ];
-    let key = [
-        0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E,
-        0x0F,
-    ];
-    // This operation shouldn&apos;t affect the contents of key at all.
-    let key2: Vec&amp;lt;u8&amp;gt; = key.iter().cycle().take(32).copied().collect();
-    println!(&amp;quot;key1:{} key2: {}&amp;quot;, hex::encode(&amp;amp;key), hex::encode(&amp;amp;key2));
-
-    let x1 = encrypt(&amp;amp;key, &amp;amp;iv, data).unwrap();
-    println!(&amp;quot;X1: {}&amp;quot;, x1);
-
-    let x2 = encrypt(&amp;amp;key2, &amp;amp;iv, data).unwrap();
-    println!(&amp;quot;X2: {}&amp;quot;, x2);
-
-    assert_eq!(x1, x2);
-}
-
-fn main() {
-    working();
-    broken();
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The output from this program:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-shell&quot;&gt;     Running `target/host/debug/rust-crypto-test`
-key1:000102030405060708090a0b0c0d0e0f key2: 000102030405060708090a0b0c0d0e0f000102030405060708090a0b0c0d0e0f
-X1: 90462bbe32965c8e7ea0addbbed4cddb
-X2: 90462bbe32965c8e7ea0addbbed4cddb
-key1:000102030405060708090a0b0c0d0e0f key2: 000102030405060708090a0b0c0d0e0f000102030405060708090a0b0c0d0e0f
-X1: 26e847e5e7df1947bf82a650548a7d5b
-X2: 90462bbe32965c8e7ea0addbbed4cddb
-thread &apos;main&apos; panicked at &apos;assertion failed: `(left == right)`
-  left: `&amp;quot;26e847e5e7df1947bf82a650548a7d5b&amp;quot;`,
- right: `&amp;quot;90462bbe32965c8e7ea0addbbed4cddb&amp;quot;`&apos;, src/main.rs:83:5
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Notably, the X1 key in the &lt;code&gt;broken()&lt;/code&gt; test changes every time after rerunning the program.&lt;/p&gt;
-
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2022-0010: Unsoundness in enum-map</title><id>https://rustsec.org/advisories/RUSTSEC-2022-0010.html</id><updated>2022-02-17T00:00:00+00:00</updated><category term="code-execution"/><category term="memory-corruption"/><category term="memory-exposure"/><link href="https://rustsec.org/advisories/RUSTSEC-2022-0010.html" rel="alternate" type="text/html" title="RUSTSEC-2022-0010: Unsoundness in enum-map"/><published>2022-02-17T00:00:00+00:00</published><summary xml:lang="en">enum_map macro can cause UB when `Enum` trait is incorrectly implemented</summary><content xml:lang="en" type="html">  &lt;article&gt;
     
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2024-0338: Vulnerability in cosmwasm-std</title><id>https://rustsec.org/advisories/RUSTSEC-2024-0338.html</id><updated>2024-04-26T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2024-0338.html" rel="alternate" type="text/html" title="RUSTSEC-2024-0338: Vulnerability in cosmwasm-std"/><published>2024-04-24T12:00:00+00:00</published><summary xml:lang="en">Arithmetic overflows in cosmwasm-std</summary><content xml:lang="en" type="html">  &lt;article&gt;
     
         &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/enum-map/RUSTSEC-2022-0010.md&quot;&gt;History&lt;/a&gt; ⋅ 
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/enum-map/RUSTSEC-2022-0010.md&quot;&gt;Edit&lt;/a&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/cosmwasm-std/RUSTSEC-2024-0338.md&quot;&gt;History&lt;/a&gt; ⋅ 
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/cosmwasm-std/RUSTSEC-2024-0338.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2024-0338&quot;&gt;JSON (OSV)&lt;/a&gt;
         &lt;/span&gt;
     
 
     &lt;header&gt;
       &lt;h1&gt;
         
-        
-        RUSTSEC-2022-0010
+        RUSTSEC-2024-0338
         
       &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;enum_map macro can cause UB when &lt;code&gt;Enum&lt;/code&gt; trait is incorrectly implemented&lt;/p&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Arithmetic overflows in cosmwasm-std&lt;/p&gt;
 &lt;/span&gt;
     &lt;/header&gt;
 
     
-    
 
     &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2024-04-24&quot;&gt;
+          April 24, 2024
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
       &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
       &lt;dd&gt;
-        &lt;time datetime=&quot;2022-02-17&quot;&gt;
-          February 17, 2022
+        &lt;time datetime=&quot;2024-04-24&quot;&gt;
+          April 24, 2024
         &lt;/time&gt;
+        
+        &lt;time datetime=&quot;2024-04-26&quot;&gt;
+          (last modified: April 26, 2024)
+        &lt;/time&gt;
+        
       &lt;/dd&gt;
 
       &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
       &lt;dd&gt;
         
         
-        
-        &lt;a href=&quot;/packages/enum-map.html&quot;&gt;enum-map&lt;/a&gt;
-          (&lt;a href=&quot;https://crates.io/crates/enum-map&quot;&gt;crates.io&lt;/a&gt;)
+        &lt;a href=&quot;/packages/cosmwasm-std.html&quot;&gt;cosmwasm-std&lt;/a&gt;
+          (&lt;a href=&quot;https://crates.io/crates/cosmwasm-std&quot;&gt;crates.io&lt;/a&gt;)
         
         
       &lt;/dd&gt;
@@ -756,43 +1210,54 @@ thread &apos;main&apos; panicked at &apos;assertion failed: `(left == right)`
       &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
       &lt;dd&gt;
         
-        
-        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
-        Unsound
+        Vulnerability
         
       &lt;/dd&gt;
 
       
-      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
+
+      
+      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
+      &lt;dd&gt;
+        
+          &lt;a href=&quot;/keywords/overflow.html&quot;&gt;#overflow&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/integer.html&quot;&gt;#integer&lt;/a&gt;
+        
+          &lt;a href=&quot;/keywords/arithmetic.html&quot;&gt;#arithmetic&lt;/a&gt;
+        
+      &lt;/dd&gt;
+      
+
+      
+      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
       &lt;dd&gt;
         &lt;ul&gt;
           
-          &lt;li&gt;&lt;a href=&quot;/categories/code-execution.html&quot;&gt;code-execution&lt;/a&gt;&lt;/li&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/memory-corruption.html&quot;&gt;memory-corruption&lt;/a&gt;&lt;/li&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/memory-exposure.html&quot;&gt;memory-exposure&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://github.com/advisories/GHSA-8724-5xmm-w5xq&quot;&gt;GHSA-8724-5xmm-w5xq&lt;/a&gt;
+            
+          &lt;/li&gt;
           
         &lt;/ul&gt;
       &lt;/dd&gt;
       
 
       
-      
-
-      
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;Details&lt;/dt&gt;
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
       &lt;dd&gt;
-        &lt;a href=&quot;https://gitlab.com/KonradBorowski/enum-map/-/blob/master/CHANGELOG.md#version-202&quot;&gt;
-          https://gitlab.com/KonradBorowski/enum-map/-/blob/master/CHANGELOG.md#version-202
-        &lt;/a&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/CosmWasm/advisories/blob/main/CWAs/CWA-2024-002.md&quot;&gt;
+              https://github.com/CosmWasm/advisories/blob/main/CWAs/CWA-2024-002.md
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
       &lt;/dd&gt;
-      
-
-      
       
 
       
@@ -803,8 +1268,11 @@ thread &apos;main&apos; panicked at &apos;assertion failed: `(left == right)`
       &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
       &lt;dd&gt;
         
-        
         &lt;ul&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;gt;=1.4.4, &amp;lt;1.5.0&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;gt;=1.5.4, &amp;lt;2.0.0&lt;/code&gt;&lt;/li&gt;
           
           &lt;li&gt;&lt;code&gt;&amp;gt;=2.0.2&lt;/code&gt;&lt;/li&gt;
           
@@ -817,7 +1285,7 @@ thread &apos;main&apos; panicked at &apos;assertion failed: `(left == right)`
       &lt;dd&gt;
         &lt;ul&gt;
           
-          &lt;li&gt;&lt;code&gt;&amp;lt;2.0.0-2&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code&gt;&amp;lt;1.3.0&lt;/code&gt;&lt;/li&gt;
           
         &lt;/ul&gt;
       &lt;/dd&gt;
@@ -825,98 +1293,81 @@ thread &apos;main&apos; panicked at &apos;assertion failed: `(left == right)`
 
       
       
-
-      
-      
-      
     &lt;/dl&gt;
-
-    
 
     
     
 
     &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;Affected versions of this crate did not properly check the length of an enum when using &lt;code&gt;enum_map!&lt;/code&gt; macro, trusting user-provided length.&lt;/p&gt;
-&lt;p&gt;When the &lt;code&gt;LENGTH&lt;/code&gt; in the &lt;code&gt;Enum&lt;/code&gt; trait does not match the array length in the &lt;code&gt;EnumArray&lt;/code&gt; trait, this can result in the initialization of the enum map with uninitialized types, which in turn can allow an attacker to execute arbitrary code.&lt;/p&gt;
-&lt;p&gt;This problem can only occur with a manual implementation of the Enum trait, it will never occur for enums that use &lt;code&gt;#[derive(Enum)]&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Example code that triggers this vulnerability looks like this:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&quot;language-rust&quot;&gt;enum E {
-    A,
-    B,
-    C,
-}
+    &lt;p&gt;Some mathematical operations in &lt;code&gt;cosmwasm-std&lt;/code&gt; use wrapping math instead of
+panicking on overflow for very big numbers. This can lead to wrong calculations in contracts
+that use these operations.&lt;/p&gt;
+&lt;p&gt;Affected functions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Uint{256,512}::pow&lt;/code&gt; / &lt;code&gt;Int{256,512}::pow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Int{256,512}::neg&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Affected if &lt;code&gt;overflow-checks = true&lt;/code&gt; is not set:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Uint{64,128}::pow&lt;/code&gt; / &lt;code&gt;Int{64,128}::pow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Int{64,128}::neg&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-impl Enum for E {
-    const LENGTH: usize = 2;
 
-    fn from_usize(value: usize) -&amp;gt; E {
-        match value {
-            0 =&amp;gt; E::A,
-            1 =&amp;gt; E::B,
-            2 =&amp;gt; E::C,
-            _ =&amp;gt; unimplemented!(),
-        }
-    }
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
 
-    fn into_usize(self) -&amp;gt; usize {
-        self as usize
-    }
-}
-
-impl&amp;lt;V&amp;gt; EnumArray&amp;lt;V&amp;gt; for E {
-    type Array = [V; 3];
-}
-
-let _map: EnumMap&amp;lt;E, String&amp;gt; = enum_map! { _ =&amp;gt; &amp;quot;Hello, world!&amp;quot;.into() };
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The flaw was corrected in commit &lt;a href=&quot;https://gitlab.com/KonradBorowski/enum-map/-/commit/b824e232f2fb47837740070096ac253df8e80dfc&quot;&gt;b824e23&lt;/a&gt; by putting &lt;code&gt;LENGTH&lt;/code&gt; property on sealed trait for macro to read.&lt;/p&gt;
-
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2022-0009: Vulnerability in libp2p-core</title><id>https://rustsec.org/advisories/RUSTSEC-2022-0009.html</id><updated>2022-02-07T00:00:00+00:00</updated><category term="crypto-failure"/><link href="https://rustsec.org/advisories/RUSTSEC-2022-0009.html" rel="alternate" type="text/html" title="RUSTSEC-2022-0009: Vulnerability in libp2p-core"/><published>2022-02-07T00:00:00+00:00</published><summary xml:lang="en">Failure to verify the public key of a `SignedEnvelope` against the `PeerId` in a `PeerRecord`</summary><content xml:lang="en" type="html">  &lt;article&gt;
     
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2024-0336: Vulnerability in rustls</title><id>https://rustsec.org/advisories/RUSTSEC-2024-0336.html</id><updated>2024-04-19T12:00:00+00:00</updated><category term="denial-of-service"/><link href="https://rustsec.org/advisories/RUSTSEC-2024-0336.html" rel="alternate" type="text/html" title="RUSTSEC-2024-0336: Vulnerability in rustls"/><published>2024-04-19T12:00:00+00:00</published><summary xml:lang="en">`rustls::ConnectionCommon::complete_io` could fall into an infinite loop based on network input</summary><content xml:lang="en" type="html">  &lt;article&gt;
     
         &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/libp2p-core/RUSTSEC-2022-0009.md&quot;&gt;History&lt;/a&gt; ⋅ 
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/libp2p-core/RUSTSEC-2022-0009.md&quot;&gt;Edit&lt;/a&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/rustls/RUSTSEC-2024-0336.md&quot;&gt;History&lt;/a&gt; ⋅ 
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/rustls/RUSTSEC-2024-0336.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2024-0336&quot;&gt;JSON (OSV)&lt;/a&gt;
         &lt;/span&gt;
     
 
     &lt;header&gt;
       &lt;h1&gt;
         
-        
-        RUSTSEC-2022-0009
+        RUSTSEC-2024-0336
         
       &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Failure to verify the public key of a &lt;code&gt;SignedEnvelope&lt;/code&gt; against the &lt;code&gt;PeerId&lt;/code&gt; in a &lt;code&gt;PeerRecord&lt;/code&gt;&lt;/p&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;&lt;code&gt;rustls::ConnectionCommon::complete_io&lt;/code&gt; could fall into an infinite loop based on network input&lt;/p&gt;
 &lt;/span&gt;
     &lt;/header&gt;
 
     
-    
 
     &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2024-04-19&quot;&gt;
+          April 19, 2024
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
       &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
       &lt;dd&gt;
-        &lt;time datetime=&quot;2022-02-07&quot;&gt;
-          February  7, 2022
+        &lt;time datetime=&quot;2024-04-19&quot;&gt;
+          April 19, 2024
         &lt;/time&gt;
+        
       &lt;/dd&gt;
 
       &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
       &lt;dd&gt;
         
         
-        
-        &lt;a href=&quot;/packages/libp2p-core.html&quot;&gt;libp2p-core&lt;/a&gt;
-          (&lt;a href=&quot;https://crates.io/crates/libp2p-core&quot;&gt;crates.io&lt;/a&gt;)
+        &lt;a href=&quot;/packages/rustls.html&quot;&gt;rustls&lt;/a&gt;
+          (&lt;a href=&quot;https://crates.io/crates/rustls&quot;&gt;crates.io&lt;/a&gt;)
         
         
       &lt;/dd&gt;
 
       &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
       &lt;dd&gt;
-        
         
         Vulnerability
         
@@ -927,265 +1378,219 @@ let _map: EnumMap&amp;lt;E, String&amp;gt; = enum_map! { _ =&amp;gt; &amp;quot;H
       &lt;dd&gt;
         &lt;ul&gt;
           
-          &lt;li&gt;&lt;a href=&quot;/categories/crypto-failure.html&quot;&gt;crypto-failure&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;/categories/denial-of-service.html&quot;&gt;denial-of-service&lt;/a&gt;&lt;/li&gt;
           
         &lt;/ul&gt;
       &lt;/dd&gt;
       
 
       
+
+      
+      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-32650&quot;&gt;CVE-2024-32650&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://github.com/advisories/GHSA-6g7w-8wpp-frhj&quot;&gt;GHSA-6g7w-8wpp-frhj&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+        &lt;/ul&gt;
+      &lt;/dd&gt;
       
 
       
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/rustls/rustls/security/advisories/GHSA-6g7w-8wpp-frhj&quot;&gt;
+              https://github.com/rustls/rustls/security/advisories/GHSA-6g7w-8wpp-frhj
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
       
 
       
-      
 
       
-      
+      &lt;dt id=&quot;cvss_score&quot;&gt;CVSS Score&lt;/dt&gt;
+      &lt;dd&gt;7.5 &lt;span class=&quot;tag high&quot;&gt;
+        HIGH
+      &lt;/span&gt;&lt;/dd&gt;
 
-      
+      &lt;dt id=&quot;cvss_details&quot;&gt;CVSS Details&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;dl&gt;
+          
+          &lt;dt&gt;Attack vector&lt;/dt&gt;&lt;dd&gt;Network&lt;/dd&gt;
+          
 
-      
+          
+          &lt;dt&gt;Attack complexity&lt;/dt&gt;&lt;dd&gt;Low&lt;/d&gt;
+          
+
+          
+          &lt;dt&gt;Privileges required&lt;/dt&gt;&lt;dd&gt;None&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;User interaction&lt;/dt&gt;&lt;dd&gt;None&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;Scope&lt;/dt&gt;&lt;dd&gt;Unchanged&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;Confidentiality&lt;/dt&gt;&lt;dd&gt;None&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;Integrity&lt;/dt&gt;&lt;dd&gt;None&lt;/dd&gt;
+          
+
+          
+          &lt;dt&gt;Availability&lt;/dt&gt;&lt;dd&gt;High&lt;/dd&gt;
+          
+        &lt;/dl&gt;
+      &lt;/dd&gt;
+
+      &lt;dt id=&quot;cvss&quot;&gt;CVSS Vector&lt;/dt&gt;
+      &lt;dd&gt;&lt;a href=&quot;https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?vector=CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H&quot;&gt;CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H&lt;/a&gt;&lt;/dd&gt;
+
       
 
       &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
       &lt;dd&gt;
         
-        
         &lt;ul&gt;
           
-          &lt;li&gt;&lt;code&gt;^0.30.2&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code&gt;&amp;gt;=0.23.5&lt;/code&gt;&lt;/li&gt;
           
-          &lt;li&gt;&lt;code&gt;&amp;gt;=0.31.1&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code&gt;&amp;gt;=0.22.4, &amp;lt;0.23.0&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;gt;=0.21.11, &amp;lt;0.22.0&lt;/code&gt;&lt;/li&gt;
           
         &lt;/ul&gt;
         
       &lt;/dd&gt;
 
       
-      &lt;dt id=&quot;unaffected&quot;&gt;Unaffected&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;lt;0.30.0-rc.1&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
 
       
       
 
-      
-      
-      
-      
-
-      
       
       
     &lt;/dl&gt;
 
-    
     
     
     &lt;dl&gt;
       &lt;dt&gt;Affected Functions&lt;/dt&gt;
       &lt;dd&gt;Version&lt;/dd&gt;
       
-      &lt;dt&gt;&lt;code&gt;libp2p_core::PeerRecord::from_signed_envelope&lt;/code&gt;&lt;/dt&gt;
+      &lt;dt&gt;&lt;code&gt;rustls::ConnectionCommon::complete_io&lt;/code&gt;&lt;/dt&gt;
       &lt;dd&gt;
         &lt;ul&gt;
           
-          &lt;li&gt;&lt;code&gt;&amp;gt;=0.30.0-rc.1&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code&gt;&amp;lt;=0.23.4&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;lt;=0.22.3&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;&amp;lt;=0.21.10&lt;/code&gt;&lt;/li&gt;
+          
+          &lt;li&gt;&lt;code&gt;^0.20&lt;/code&gt;&lt;/li&gt;
           
         &lt;/ul&gt;
       &lt;/dd&gt;
       
     &lt;/dl&gt;
     
+
     
 
     &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;Affected versions of this crate did not check that the public key the signature was created with matches the peer ID of the peer record.
-Any combination was considered valid.&lt;/p&gt;
-&lt;p&gt;This allows an attacker to republish an existing &lt;code&gt;PeerRecord&lt;/code&gt; with a different &lt;code&gt;PeerId&lt;/code&gt;.&lt;/p&gt;
+    &lt;p&gt;If a &lt;code&gt;close_notify&lt;/code&gt; alert is received during a handshake, &lt;code&gt;complete_io&lt;/code&gt;
+does not terminate.&lt;/p&gt;
+&lt;p&gt;Callers which do not call &lt;code&gt;complete_io&lt;/code&gt; are not affected.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;rustls-tokio&lt;/code&gt; and &lt;code&gt;rustls-ffi&lt;/code&gt; do not call &lt;code&gt;complete_io&lt;/code&gt;
+and are not affected.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;rustls::Stream&lt;/code&gt; and &lt;code&gt;rustls::StreamOwned&lt;/code&gt; types use
+&lt;code&gt;complete_io&lt;/code&gt; and are affected.&lt;/p&gt;
 
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2022-0007: Unsoundness in qcell</title><id>https://rustsec.org/advisories/RUSTSEC-2022-0007.html</id><updated>2022-01-24T00:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2022-0007.html" rel="alternate" type="text/html" title="RUSTSEC-2022-0007: Unsoundness in qcell"/><published>2022-01-24T00:00:00+00:00</published><summary xml:lang="en">A malicious coder can get unsound access to TCell or TLCell memory</summary><content xml:lang="en" type="html">  &lt;article&gt;
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
     
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2024-0335: Vulnerability in gix-transport</title><id>https://rustsec.org/advisories/RUSTSEC-2024-0335.html</id><updated>2024-04-26T12:00:00+00:00</updated><category term="code-execution"/><link href="https://rustsec.org/advisories/RUSTSEC-2024-0335.html" rel="alternate" type="text/html" title="RUSTSEC-2024-0335: Vulnerability in gix-transport"/><published>2024-04-13T12:00:00+00:00</published><summary xml:lang="en">gix-transport indirect code execution via malicious username</summary><content xml:lang="en" type="html">  &lt;article&gt;
     
         &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/qcell/RUSTSEC-2022-0007.md&quot;&gt;History&lt;/a&gt; ⋅ 
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/qcell/RUSTSEC-2022-0007.md&quot;&gt;Edit&lt;/a&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/gix-transport/RUSTSEC-2024-0335.md&quot;&gt;History&lt;/a&gt; ⋅ 
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/gix-transport/RUSTSEC-2024-0335.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2024-0335&quot;&gt;JSON (OSV)&lt;/a&gt;
         &lt;/span&gt;
     
 
     &lt;header&gt;
       &lt;h1&gt;
         
-        
-        RUSTSEC-2022-0007
+        RUSTSEC-2024-0335
         
       &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;A malicious coder can get unsound access to TCell or TLCell memory&lt;/p&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;gix-transport indirect code execution via malicious username&lt;/p&gt;
 &lt;/span&gt;
     &lt;/header&gt;
 
     
-    
 
     &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2024-04-13&quot;&gt;
+          April 13, 2024
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
       &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
       &lt;dd&gt;
-        &lt;time datetime=&quot;2022-01-24&quot;&gt;
-          January 24, 2022
+        &lt;time datetime=&quot;2024-04-13&quot;&gt;
+          April 13, 2024
         &lt;/time&gt;
+        
+        &lt;time datetime=&quot;2024-04-26&quot;&gt;
+          (last modified: April 26, 2024)
+        &lt;/time&gt;
+        
       &lt;/dd&gt;
 
       &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
       &lt;dd&gt;
         
         
-        
-        &lt;a href=&quot;/packages/qcell.html&quot;&gt;qcell&lt;/a&gt;
-          (&lt;a href=&quot;https://crates.io/crates/qcell&quot;&gt;crates.io&lt;/a&gt;)
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
-        Unsound
-        
-      &lt;/dd&gt;
-
-      
-      
-
-      
-      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
-      &lt;dd&gt;
-        
-          &lt;a href=&quot;/keywords/unsound.html&quot;&gt;#unsound&lt;/a&gt;
-        
-      &lt;/dd&gt;
-      
-
-      
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;a href=&quot;https://github.com/uazu/qcell/issues/20&quot;&gt;
-          https://github.com/uazu/qcell/issues/20
-        &lt;/a&gt;
-      &lt;/dd&gt;
-      
-
-      
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;gt;=0.4.3&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-      
-
-      
-      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
-      &lt;dd&gt;
-        
-          &lt;a href=&quot;/keywords/unsound.html&quot;&gt;#unsound&lt;/a&gt;
-        
-      &lt;/dd&gt;
-      
-
-      
-      
-      
-    &lt;/dl&gt;
-
-    
-
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;This is impossible to do by accident, but by carefully constructing
-marker types to be covariant, a malicious coder can cheat the
-singleton check in &lt;code&gt;TCellOwner&lt;/code&gt; and &lt;code&gt;TLCellOwner&lt;/code&gt;, giving unsound
-access to cell memory.  This could take the form of getting two
-mutable references to the same memory, or a mutable reference and an
-immutable reference.&lt;/p&gt;
-&lt;p&gt;The fix is for the crate to internally force the marker type to be
-invariant.  This blocks the conversion between covariant types which
-Rust normally allows.&lt;/p&gt;
-
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2022-0006: Vulnerability in thread_local</title><id>https://rustsec.org/advisories/RUSTSEC-2022-0006.html</id><updated>2022-01-23T00:00:00+00:00</updated><category term="memory-corruption"/><link href="https://rustsec.org/advisories/RUSTSEC-2022-0006.html" rel="alternate" type="text/html" title="RUSTSEC-2022-0006: Vulnerability in thread_local"/><published>2022-01-23T00:00:00+00:00</published><summary xml:lang="en">Data race in `Iter` and `IterMut`</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/thread_local/RUSTSEC-2022-0006.md&quot;&gt;History&lt;/a&gt; ⋅ 
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/thread_local/RUSTSEC-2022-0006.md&quot;&gt;Edit&lt;/a&gt;
-        &lt;/span&gt;
-    
-
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        
-        RUSTSEC-2022-0006
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Data race in &lt;code&gt;Iter&lt;/code&gt; and &lt;code&gt;IterMut&lt;/code&gt;&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
-
-    
-    
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2022-01-23&quot;&gt;
-          January 23, 2022
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        
-        &lt;a href=&quot;/packages/thread_local.html&quot;&gt;thread_local&lt;/a&gt;
-          (&lt;a href=&quot;https://crates.io/crates/thread_local&quot;&gt;crates.io&lt;/a&gt;)
+        &lt;a href=&quot;/packages/gix-transport.html&quot;&gt;gix-transport&lt;/a&gt;
+          (&lt;a href=&quot;https://crates.io/crates/gix-transport&quot;&gt;crates.io&lt;/a&gt;)
         
         
       &lt;/dd&gt;
 
       &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
       &lt;dd&gt;
-        
         
         Vulnerability
         
@@ -1196,28 +1601,49 @@ Rust normally allows.&lt;/p&gt;
       &lt;dd&gt;
         &lt;ul&gt;
           
-          &lt;li&gt;&lt;a href=&quot;/categories/memory-corruption.html&quot;&gt;memory-corruption&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;/categories/code-execution.html&quot;&gt;code-execution&lt;/a&gt;&lt;/li&gt;
           
         &lt;/ul&gt;
       &lt;/dd&gt;
       
 
       
-      
 
       
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;Details&lt;/dt&gt;
+      &lt;dt id=&quot;aliases&quot;&gt;Aliases&lt;/dt&gt;
       &lt;dd&gt;
-        &lt;a href=&quot;https://github.com/Amanieu/thread_local-rs/issues/33&quot;&gt;
-          https://github.com/Amanieu/thread_local-rs/issues/33
-        &lt;/a&gt;
+        &lt;ul&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-32884&quot;&gt;CVE-2024-32884&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+          &lt;li&gt;
+            
+            &lt;a href=&quot;https://github.com/advisories/GHSA-98p4-xjmm-8mfh&quot;&gt;GHSA-98p4-xjmm-8mfh&lt;/a&gt;
+            
+          &lt;/li&gt;
+          
+        &lt;/ul&gt;
       &lt;/dd&gt;
       
 
       
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/Byron/gitoxide/security/advisories/GHSA-98p4-xjmm-8mfh&quot;&gt;
+              https://github.com/Byron/gitoxide/security/advisories/GHSA-98p4-xjmm-8mfh
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
+      &lt;/dd&gt;
       
 
       
@@ -1228,81 +1654,127 @@ Rust normally allows.&lt;/p&gt;
       &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
       &lt;dd&gt;
         
-        
         &lt;ul&gt;
           
-          &lt;li&gt;&lt;code&gt;&amp;gt;=1.1.4&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;code&gt;&amp;gt;=0.42.0&lt;/code&gt;&lt;/li&gt;
           
         &lt;/ul&gt;
         
       &lt;/dd&gt;
 
       
-      
 
-      
-      
-
-      
       
       
     &lt;/dl&gt;
 
     
-
-    
     
 
     &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;In the affected version of this crate, &lt;code&gt;{Iter, IterMut}::next&lt;/code&gt; used a weaker memory ordering when loading values than what was required, exposing a potential data race
-when iterating over a &lt;code&gt;ThreadLocal&lt;/code&gt;&apos;s values.&lt;/p&gt;
-&lt;p&gt;Crates using &lt;code&gt;Iter::next&lt;/code&gt;, or &lt;code&gt;IterMut::next&lt;/code&gt; are affected by this issue.&lt;/p&gt;
+    &lt;h3&gt;Summary&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;gix-transport&lt;/code&gt; does not check the username part of a URL for text that the external &lt;code&gt;ssh&lt;/code&gt; program would interpret as an option. A specially crafted clone URL can smuggle options to SSH. The possibilities are syntactically limited, but if a malicious clone URL is used by an application whose current working directory contains a malicious file, arbitrary code execution occurs.&lt;/p&gt;
+&lt;p&gt;The first &lt;code&gt;gix&lt;/code&gt; crate with the fix &lt;a href=&quot;https://crates.io/crates/gix/0.62.0&quot;&gt;is version 0.62.0&lt;/a&gt;, and the first fixed &lt;code&gt;gix&lt;/code&gt; CLI is &lt;a href=&quot;https://github.com/Byron/gitoxide/releases/tag/v0.35.0&quot;&gt;version 0.35&lt;/a&gt;. &lt;code&gt;gix-transport&lt;/code&gt; &lt;a href=&quot;https://crates.io/crates/gix-transport/0.42.0&quot;&gt;at version v0.42&lt;/a&gt; is the lowest-level plumbing crate with the fix.&lt;/p&gt;
+&lt;h3&gt;Details&lt;/h3&gt;
+&lt;p&gt;This is related to the patched vulnerability &lt;a href=&quot;https://rustsec.org/advisories/RUSTSEC-2023-0064.html&quot;&gt;RUSTSEC-2023-0064&lt;/a&gt;, but appears less severe due to a greater attack complexity. Since &lt;a href=&quot;https://github.com/Byron/gitoxide/pull/1032&quot;&gt;https://github.com/Byron/gitoxide/pull/1032&lt;/a&gt;, &lt;code&gt;gix-transport&lt;/code&gt; checks the host and path portions of a URL for text that has a &lt;code&gt;-&lt;/code&gt; in a position that will cause &lt;code&gt;ssh&lt;/code&gt; to interpret part of all of the URL as an option argument. But it does not check the non-mandatory username portion of the URL.&lt;/p&gt;
+&lt;p&gt;As in Git, when an address is a URL of the form &lt;code&gt;ssh://username@hostname/path&lt;/code&gt;, or when it takes the special form &lt;code&gt;username@hostname:dirs/repo&lt;/code&gt;, this is treated as an SSH URL. &lt;code&gt;gix-transport&lt;/code&gt; will replace some characters in &lt;code&gt;username&lt;/code&gt; with their &lt;code&gt;%&lt;/code&gt;-based URL encodings, but otherwise passes &lt;code&gt;username@hostname&lt;/code&gt; as an argument to the external &lt;code&gt;ssh&lt;/code&gt; command. This happens even if &lt;code&gt;username&lt;/code&gt; begins with a hyphen. In that case, &lt;code&gt;ssh&lt;/code&gt; treats that argument as an option argument, and attempts to interpret and honor it as a sequence of one or more options possibly followed by an operand for the last option.&lt;/p&gt;
+&lt;p&gt;This is harder to exploit than &lt;a href=&quot;https://rustsec.org/advisories/RUSTSEC-2023-0064.html&quot;&gt;RUSTSEC-2023-0064&lt;/a&gt;, because the possibilities are constrained by:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The difficulty of forming an option argument &lt;code&gt;ssh&lt;/code&gt; accepts, given that characters such as &lt;code&gt;=&lt;/code&gt;, &lt;code&gt;/&lt;/code&gt;, and &lt;code&gt;\&lt;/code&gt;, are URL-encoded, &lt;code&gt;:&lt;/code&gt; is removed, and the argument passed to &lt;code&gt;ssh&lt;/code&gt; contains the &lt;code&gt;@&lt;/code&gt; sign and subsequent host identifier, which in an effective attack must be parseable as a suffix of the operand passed to the last option.&lt;/p&gt;
+&lt;p&gt;The inability to include a literal &lt;code&gt;=&lt;/code&gt; prevents the use of &lt;code&gt;-oNAME=VALUE&lt;/code&gt; (e.g., &lt;code&gt;-oProxyCommand=payload&lt;/code&gt;). The inability to include a literal &lt;code&gt;/&lt;/code&gt; or &lt;code&gt;\&lt;/code&gt; prevents smuggling in a path operand residing outside the current working directory, incuding on Windows. (Although a &lt;code&gt;~&lt;/code&gt; character may be smuggled in, &lt;code&gt;ssh&lt;/code&gt; does not perform its own tilde expansion, so it does not form an absolute path.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The difficulty, or perhaps impossibility, of completing a connection (other than when arbitrary code execution has been achieved). This complicates or altogether prevents the use of options such as &lt;code&gt;-A&lt;/code&gt; and &lt;code&gt;-X&lt;/code&gt; together with a connection to a real but malicious server. The reason a connection cannot generally be completed when exploiting this vulnerability is that, because the argument &lt;code&gt;gix-transport&lt;/code&gt; intends as a URL is treated as an option argument, &lt;code&gt;ssh&lt;/code&gt; treats the subsequent non-option argument &lt;code&gt;git-upload-pack&lt;/code&gt; as the host instead of the command, but it is not a valid host name.&lt;/p&gt;
+&lt;p&gt;Although &lt;code&gt;ssh&lt;/code&gt; supports aliases for hosts, even if &lt;code&gt;git-upload-pack&lt;/code&gt; could be made an alias, that is made difficult by the URL-encoding transformation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;However, an attacker who is able to cause a specially named &lt;code&gt;ssh&lt;/code&gt; configuration file to be placed in the current working directory can smuggle in an &lt;code&gt;-F&lt;/code&gt; option referencing the file, and this allows arbitrary command execution.&lt;/p&gt;
+&lt;p&gt;This scenario is especially plausible because programs that operate on git repositories are often run in untrusted git repositories, sometimes even to operate on another repository. Situations where this is likely, such that an attacker could predict or arrange it, may for some applications include a malicious repository with a malicious submodule configuration.&lt;/p&gt;
+&lt;p&gt;Other avenues of exploitation exist, but appear to be less severe. For example, the &lt;code&gt;-E&lt;/code&gt; option can be smuggled to create or append to a file in the current directory (or its target, if it is a symlink). There may also be other significant ways to exploit this that have not yet been discovered, or that would arise with new options in future versions of &lt;code&gt;ssh&lt;/code&gt;.&lt;/p&gt;
+&lt;h3&gt;PoC&lt;/h3&gt;
+&lt;p&gt;To reproduce the known case that facilitates arbitrary code execution, first create a file in the current directory named &lt;code&gt;configfile@example.com&lt;/code&gt;, of the form&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-text&quot;&gt;ProxyCommand payload
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;where &lt;code&gt;payload&lt;/code&gt; is a command with an observable side effect. On Unix-like systems, this could be &lt;code&gt;date | tee vulnerable&lt;/code&gt; or an &lt;code&gt;xdg-open&lt;/code&gt;, &lt;code&gt;open&lt;/code&gt;, or other command command to launch a graphical application. On Windows, this could be the name of a graphical application already in the search path, such as &lt;code&gt;calc.exe&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;(Although the syntax permitted in the value of &lt;code&gt;ProxyCommand&lt;/code&gt; may vary by platform, this is not limited to running commands in the current directory. That limitation only applies to paths directly smuggled in the username, not to the contents of a separate malicious configuration file. Arbitrary other settings may be specified in &lt;code&gt;configfile@example.com&lt;/code&gt; as well.)&lt;/p&gt;
+&lt;p&gt;Then run:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;gix clone &apos;ssh://-Fconfigfile@example.com/abc&apos;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;gix clone -- &apos;-Fconfigfile@example.com:abc/def&apos;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;(The &lt;code&gt;--&lt;/code&gt; is required to ensure that &lt;code&gt;gix&lt;/code&gt; is really passing the argument as a URL for use in &lt;code&gt;gix-transport&lt;/code&gt;, rather than interpreting it as an option itself, which would not necessarily be a vulnerability.)&lt;/p&gt;
+&lt;p&gt;In either case, the payload specified in &lt;code&gt;configfile@example.com&lt;/code&gt; runs, and its side effect can be observed.&lt;/p&gt;
+&lt;p&gt;Other cases may likewise be produced, in either of the above two forms of SSH addresses. For example, to create or append to the file &lt;code&gt;errors@example.com&lt;/code&gt;, or to create or append to its target if it is a symlink:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;gix clone &apos;ssh://-Eerrors@example.com/abc&apos;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&quot;language-sh&quot;&gt;gix clone -- &apos;-Eerrors@example.com:abc/def&apos;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Impact&lt;/h3&gt;
+&lt;p&gt;As in &lt;a href=&quot;https://rustsec.org/advisories/RUSTSEC-2023-0064.html&quot;&gt;RUSTSEC-2023-0064&lt;/a&gt;, this would typically require user interaction to trigger an attempt to clone or otherwise connect using the malicious URL. Furthermore, known means of exploiting this vulnerability to execute arbitrary commands require further preparatory steps to establish a specially named file in the current directory. The impact is therefore expected to be lesser, though it is difficult to predict it with certainty because it is not known exactly what scenarios will arise when using the &lt;code&gt;gix-transport&lt;/code&gt; library.&lt;/p&gt;
+&lt;p&gt;Users who use applications that make use of &lt;code&gt;gix-transport&lt;/code&gt; are potentially vulnerable, especially:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;On repositories with submodules that are automatically added, depending how the application manages submodules.&lt;/li&gt;
+&lt;li&gt;When operating on other repositories from inside an untrusted repository.&lt;/li&gt;
+&lt;li&gt;When reviewing contributions from untrusted developers by checking out a branch from an untrusted fork and performing clones from that location.&lt;/li&gt;
+&lt;/ul&gt;
 
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2022-0005: ftd2xx-embedded-hal is unmaintained</title><id>https://rustsec.org/advisories/RUSTSEC-2022-0005.html</id><updated>2022-01-22T00:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2022-0005.html" rel="alternate" type="text/html" title="RUSTSEC-2022-0005: ftd2xx-embedded-hal is unmaintained"/><published>2022-01-22T00:00:00+00:00</published><summary xml:lang="en">crate has been renamed to `ftdi-embedded-hal`</summary><content xml:lang="en" type="html">  &lt;article&gt;
+
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC0-1.0.html&quot;&gt;CC0-1.0&lt;/a&gt;
+    license.
+
     
+    &lt;/p&gt;
+  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2024-0334: libp2p-tokio-socks5 is unmaintained</title><id>https://rustsec.org/advisories/RUSTSEC-2024-0334.html</id><updated>2024-04-12T12:00:00+00:00</updated><link href="https://rustsec.org/advisories/RUSTSEC-2024-0334.html" rel="alternate" type="text/html" title="RUSTSEC-2024-0334: libp2p-tokio-socks5 is unmaintained"/><published>2024-04-12T12:00:00+00:00</published><summary xml:lang="en">`libp2p-tokio-socks5` is unmaintained</summary><content xml:lang="en" type="html">  &lt;article&gt;
     
         &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/ftd2xx-embedded-hal/RUSTSEC-2022-0005.md&quot;&gt;History&lt;/a&gt; ⋅ 
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/ftd2xx-embedded-hal/RUSTSEC-2022-0005.md&quot;&gt;Edit&lt;/a&gt;
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/libp2p-tokio-socks5/RUSTSEC-2024-0334.md&quot;&gt;History&lt;/a&gt; ⋅ 
+          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/libp2p-tokio-socks5/RUSTSEC-2024-0334.md&quot;&gt;Edit&lt;/a&gt; ⋅
+          &lt;a href=&quot;https://api.osv.dev/v1/vulns/RUSTSEC-2024-0334&quot;&gt;JSON (OSV)&lt;/a&gt;
         &lt;/span&gt;
     
 
     &lt;header&gt;
       &lt;h1&gt;
         
-        
-        RUSTSEC-2022-0005
+        RUSTSEC-2024-0334
         
       &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;crate has been renamed to &lt;code&gt;ftdi-embedded-hal&lt;/code&gt;&lt;/p&gt;
+      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;&lt;code&gt;libp2p-tokio-socks5&lt;/code&gt; is unmaintained&lt;/p&gt;
 &lt;/span&gt;
     &lt;/header&gt;
 
     
-    
 
     &lt;dl&gt;
+      &lt;dt id=&quot;reported&quot;&gt;Reported&lt;/dt&gt;
+      &lt;dd&gt;
+        &lt;time datetime=&quot;2024-04-05&quot;&gt;
+          April  5, 2024
+        &lt;/time&gt;
+      &lt;/dd&gt;
+
       &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
       &lt;dd&gt;
-        &lt;time datetime=&quot;2022-01-22&quot;&gt;
-          January 22, 2022
+        &lt;time datetime=&quot;2024-04-12&quot;&gt;
+          April 12, 2024
         &lt;/time&gt;
+        
       &lt;/dd&gt;
 
       &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
       &lt;dd&gt;
         
         
-        
-        &lt;a href=&quot;/packages/ftd2xx-embedded-hal.html&quot;&gt;ftd2xx-embedded-hal&lt;/a&gt;
-          (&lt;a href=&quot;https://crates.io/crates/ftd2xx-embedded-hal&quot;&gt;crates.io&lt;/a&gt;)
+        &lt;a href=&quot;/packages/libp2p-tokio-socks5.html&quot;&gt;libp2p-tokio-socks5&lt;/a&gt;
+          (&lt;a href=&quot;https://crates.io/crates/libp2p-tokio-socks5&quot;&gt;crates.io&lt;/a&gt;)
         
         
       &lt;/dd&gt;
 
       &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
       &lt;dd&gt;
-        
         
         &lt;span class=&quot;tag info&quot;&gt;INFO&lt;/span&gt;
         Unmaintained
@@ -1310,24 +1782,25 @@ when iterating over a &lt;code&gt;ThreadLocal&lt;/code&gt;&apos;s values.&lt;/p&
       &lt;/dd&gt;
 
       
+
       
 
       
-      
 
       
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;Details&lt;/dt&gt;
+      &lt;dt id=&quot;details&quot;&gt;References&lt;/dt&gt;
       &lt;dd&gt;
-        &lt;a href=&quot;https://github.com/newAM/ftd2xx-embedded-hal/pull/40&quot;&gt;
-          https://github.com/newAM/ftd2xx-embedded-hal/pull/40
-        &lt;/a&gt;
+        &lt;ul&gt;
+        
+          &lt;li&gt;
+            &lt;a href=&quot;https://github.com/comit-network/rust-libp2p-tokio-socks5/commit/e1fdc92ca69ffd254824ab80fbad5660f4aac911&quot;&gt;
+              https://github.com/comit-network/rust-libp2p-tokio-socks5/commit/e1fdc92ca69ffd254824ab80fbad5660f4aac911
+            &lt;/a&gt;
+          &lt;/li&gt;
+        
+        
+        &lt;/ul&gt;
       &lt;/dd&gt;
-      
-
-      
       
 
       
@@ -1343,187 +1816,30 @@ when iterating over a &lt;code&gt;ThreadLocal&lt;/code&gt;&apos;s values.&lt;/p&
       &lt;/dd&gt;
 
       
-      
 
-      
-      
-
-      
       
       
     &lt;/dl&gt;
-
-    
 
     
     
 
     &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;This crate has been renamed from &lt;code&gt;ftd2xx-embedded-hal&lt;/code&gt; to &lt;code&gt;ftdi-embedded-hal&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;The new repository location is:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/ftdi-rs/ftdi-embedded-hal&quot;&gt;https://github.com/ftdi-rs/ftdi-embedded-hal&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;Note the repository was archived without an issue so we link directly
+to the commit that marked the repository as unmaintained.&lt;/p&gt;
+&lt;p&gt;To the best of the original authors knowledge the crate has no
+vulnerabilities as of the last release, it is just unmaintained due to
+laziness - new maintainer welcome.&lt;/p&gt;
 
-  &lt;/article&gt;</content></entry><entry><title>RUSTSEC-2022-0003: Vulnerability in ammonia</title><id>https://rustsec.org/advisories/RUSTSEC-2022-0003.html</id><updated>2022-01-19T00:00:00+00:00</updated><category term="format-injection"/><link href="https://rustsec.org/advisories/RUSTSEC-2022-0003.html" rel="alternate" type="text/html" title="RUSTSEC-2022-0003: Vulnerability in ammonia"/><published>2022-01-19T00:00:00+00:00</published><summary xml:lang="en">Space bug in `clean_text`</summary><content xml:lang="en" type="html">  &lt;article&gt;
-    
-    
-        &lt;span class=&quot;floating-menu&quot;&gt;
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/commits/main/crates/ammonia/RUSTSEC-2022-0003.md&quot;&gt;History&lt;/a&gt; ⋅ 
-          &lt;a href=&quot;https://github.com/RustSec/advisory-db/edit/main/crates/ammonia/RUSTSEC-2022-0003.md&quot;&gt;Edit&lt;/a&gt;
-        &lt;/span&gt;
-    
 
-    &lt;header&gt;
-      &lt;h1&gt;
-        
-        
-        RUSTSEC-2022-0003
-        
-      &lt;/h1&gt;
-      &lt;span class=&quot;subtitle&quot;&gt;&lt;p&gt;Space bug in &lt;code&gt;clean_text&lt;/code&gt;&lt;/p&gt;
-&lt;/span&gt;
-    &lt;/header&gt;
+    &lt;p id=&quot;license&quot; class=&quot;license&quot;&gt;Advisory available under &lt;a href=&quot;https://spdx.org/licenses/CC-BY-4.0.html&quot;&gt;CC-BY-4.0&lt;/a&gt;
+    license.
 
     
+      
+      
+          Source: &lt;a href=&quot;https://github.com/comit-network/rust-libp2p-tokio-socks5/commit/e1fdc92ca69ffd254824ab80fbad5660f4aac911&quot;&gt;https://github.com/comit-network/rust-libp2p-tokio-socks5/commit/e1fdc92ca69ffd254824ab80fbad5660f4aac911&lt;/a&gt;
+        
     
-
-    &lt;dl&gt;
-      &lt;dt id=&quot;issued&quot;&gt;Issued&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;time datetime=&quot;2022-01-19&quot;&gt;
-          January 19, 2022
-        &lt;/time&gt;
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;package&quot;&gt;Package&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        
-        &lt;a href=&quot;/packages/ammonia.html&quot;&gt;ammonia&lt;/a&gt;
-          (&lt;a href=&quot;https://crates.io/crates/ammonia&quot;&gt;crates.io&lt;/a&gt;)
-        
-        
-      &lt;/dd&gt;
-
-      &lt;dt id=&quot;type&quot;&gt;Type&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        Vulnerability
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;categories&quot;&gt;Categories&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;a href=&quot;/categories/format-injection.html&quot;&gt;format-injection&lt;/a&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
-      &lt;dd&gt;
-        
-          &lt;a href=&quot;/keywords/html.html&quot;&gt;#html&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/xss.html&quot;&gt;#xss&lt;/a&gt;
-        
-      &lt;/dd&gt;
-      
-
-      
-      
-
-      
-      &lt;dt id=&quot;details&quot;&gt;Details&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;a href=&quot;https://github.com/rust-ammonia/ammonia/pull/147&quot;&gt;
-          https://github.com/rust-ammonia/ammonia/pull/147
-        &lt;/a&gt;
-      &lt;/dd&gt;
-      
-
-      
-      
-
-      
-
-      
-      
-
-      &lt;dt id=&quot;patched&quot;&gt;Patched&lt;/dt&gt;
-      &lt;dd&gt;
-        
-        
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;gt;=3.1.3&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-        
-      &lt;/dd&gt;
-
-      
-      &lt;dt id=&quot;unaffected&quot;&gt;Unaffected&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;lt;3.0.0&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-
-      
-      &lt;dt id=&quot;keywords&quot;&gt;Keywords&lt;/dt&gt;
-      &lt;dd&gt;
-        
-          &lt;a href=&quot;/keywords/html.html&quot;&gt;#html&lt;/a&gt;
-        
-          &lt;a href=&quot;/keywords/xss.html&quot;&gt;#xss&lt;/a&gt;
-        
-      &lt;/dd&gt;
-      
-
-      
-      
-      
-      
-
-      
-      
-      
-    &lt;/dl&gt;
-
-    
-    
-    
-    &lt;dl&gt;
-      &lt;dt&gt;Affected Functions&lt;/dt&gt;
-      &lt;dd&gt;Version&lt;/dd&gt;
-      
-      &lt;dt&gt;&lt;code&gt;ammonia::clean_text&lt;/code&gt;&lt;/dt&gt;
-      &lt;dd&gt;
-        &lt;ul&gt;
-          
-          &lt;li&gt;&lt;code&gt;&amp;lt;=3.1.2&lt;/code&gt;&lt;/li&gt;
-          
-        &lt;/ul&gt;
-      &lt;/dd&gt;
-      
-    &lt;/dl&gt;
-    
-    
-
-    &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
-    &lt;p&gt;An incorrect mapping from HTML specification to ASCII codes was used.
-Because HTML treats the Form Feed as whitespace, code like this has an injection bug:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;let html = format!(&amp;quot;&amp;lt;div title={}&amp;gt;&amp;quot;, clean_text(user_supplied_string));
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Applications are not affected if they quote their attributes, or if they don&apos;t use &lt;code&gt;clean_text&lt;/code&gt; at all.&lt;/p&gt;
-
+    &lt;/p&gt;
   &lt;/article&gt;</content></entry></feed>
